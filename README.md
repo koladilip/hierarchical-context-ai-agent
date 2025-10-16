@@ -86,14 +86,14 @@ graph LR
     Bedrock --> Response
     Response --> Update
     
-    style U fill:#e1f5ff
-    style Recent fill:#b3e5b3
-    style Middle fill:#fff9b3
-    style Ancient fill:#ffccb3
-    style Tools fill:#e6ccff
-    style Bedrock fill:#ffd9b3
-    style Response fill:#b3f0ff
-    style Update fill:#cccccc
+    style U fill:#4a9eff,stroke:#333,color:#fff
+    style Recent fill:#28a745,stroke:#333,color:#fff
+    style Middle fill:#ffc107,stroke:#333,color:#000
+    style Ancient fill:#fd7e14,stroke:#333,color:#fff
+    style Tools fill:#6f42c1,stroke:#333,color:#fff
+    style Bedrock fill:#ff6b6b,stroke:#333,color:#fff
+    style Response fill:#20c997,stroke:#333,color:#fff
+    style Update fill:#6c757d,stroke:#333,color:#fff
 ```
 
 ### Key Innovation: Structured Memory vs Prose Summaries
