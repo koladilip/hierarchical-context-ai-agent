@@ -1,0 +1,1103 @@
+{
+  "metadata": {
+    "timestamp": "2025-10-16T10:30:54.564Z",
+    "totalTurns": 80,
+    "evaluationPoints": [
+      10,
+      14,
+      20,
+      24,
+      30,
+      32,
+      40,
+      50,
+      51,
+      60,
+      70,
+      80
+    ],
+    "sessions": {
+      "baseline": "a7d9a264-44bc-4908-8e74-b0ab3b46680d",
+      "summarized": "d2d02fe5-6944-439e-94f0-8074bdabb4e2"
+    }
+  },
+  "summary": {
+    "avgScores": {
+      "consistency": 8.2,
+      "completeness": 9,
+      "accuracy": 7.3,
+      "relevance": 10,
+      "overall": 8.1
+    },
+    "winners": {
+      "baseline": 12,
+      "summarized": 0,
+      "tie": 0
+    },
+    "factRecall": {
+      "baseline": {
+        "accuracy": 93.33333333333333,
+        "correctCount": 14,
+        "total": 15,
+        "details": [
+          {
+            "question": "Who is the bride?",
+            "expected": "Sarah Chen",
+            "answer": "The bride's name is Sarah Chen.",
+            "correct": true
+          },
+          {
+            "question": "What is the groom's actual full name, not his nickname?",
+            "expected": "Miguel Torres",
+            "answer": "Your groom's actual full name is Miguel Torres, and Michael is his nickname. If you need any help with planning your wedding or have any other questions, feel free to ask!",
+            "correct": true
+          },
+          {
+            "question": "What is the venue name?",
+            "expected": "Riverside Gardens",
+            "answer": "You finalized on Riverside Gardens as your venue. It provides a charming riverside setting that can create a beautiful backdrop for your wedding.",
+            "correct": true
+          },
+          {
+            "question": "When is the wedding date?",
+            "expected": "June 15th, 2025",
+            "answer": "Your wedding is planned for June 15th, 2025. If you need help with planning or have any other questions, feel free to ask!",
+            "correct": true
+          },
+          {
+            "question": "What is the total budget?",
+            "expected": "45000",
+            "answer": "Your total budget for the wedding is $45,000. If you need help with planning or have any other questions, feel free to ask!",
+            "correct": false
+          },
+          {
+            "question": "How many guests are expected in the final count?",
+            "expected": "160",
+            "answer": "After finalizing your guest list, you are expecting exactly 160 guests. If you need help with planning for this number of guests or have any other questions, feel free to ask!",
+            "correct": true
+          },
+          {
+            "question": "What time does the ceremony start?",
+            "expected": "4 PM",
+            "answer": "The ceremony starts at 4 PM. If you need help with planning the timeline or any other aspect of your wedding, feel free to ask!",
+            "correct": true
+          },
+          {
+            "question": "Who is the photographer and what's her full name?",
+            "expected": "Elena Rodriguez",
+            "answer": "The photographer's full name is Elena Rodriguez. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+            "correct": true
+          },
+          {
+            "question": "Are they doing a hot-air balloon entrance?",
+            "expected": "no",
+            "answer": "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, entrance, Sarah Chen). This will be remembered in all future chats.\n\nYou've decided not to do the hot-air balloon entrance as it's too dramatic for your style. If you have any other ideas for your entrance or need help with any other aspect of your wedding planning, feel free to ask!",
+            "correct": true
+          },
+          {
+            "question": "Who is the event planner?",
+            "expected": "John",
+            "answer": "Your event planner is John, who will handle vendor coordination. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+            "correct": true
+          },
+          {
+            "question": "Which venue did they reject?",
+            "expected": "Seaside Pavilion",
+            "answer": "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, venue, Sarah Chen). This will be remembered in all future chats.\n\nYou almost chose Seaside Pavilion as your venue but decided against it because it was too expensive. Riverside Gardens is the venue you've finalized on. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+            "correct": true
+          },
+          {
+            "question": "Who is coordinating the string quartet?",
+            "expected": "Amy",
+            "answer": "Your cousin Amy is coordinating the string quartet for the ceremony. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+            "correct": true
+          },
+          {
+            "question": "How many wedding cakes are they ordering?",
+            "expected": "one",
+            "answer": "You decided to order one wedding cake from Sweet Dreams, which costs $650 and serves 200. If you need help with any other aspect of your cake or have any other questions, feel free to ask!",
+            "correct": true
+          },
+          {
+            "question": "Are they hiring a videographer?",
+            "expected": "no",
+            "answer": "You decided against hiring a videographer because you found it unnecessary or budget-friendly to not include one. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+            "correct": true
+          },
+          {
+            "question": "What transportation did they book for guests?",
+            "expected": "shuttle",
+            "answer": "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, transportation, Sarah Chen). This will be remembered in all future chats.\n\nYou decided to book a shuttle bus instead of renting luxury cars. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+            "correct": true
+          }
+        ]
+      },
+      "summarized": {
+        "accuracy": 86.66666666666667,
+        "correctCount": 13,
+        "total": 15,
+        "details": [
+          {
+            "question": "Who is the bride?",
+            "expected": "Sarah Chen",
+            "answer": "The bride's name is Sarah Chen. If you need any more help with details or have any questions about your wedding planning, feel free to ask. I'm here to assist you in any way I can.",
+            "correct": true
+          },
+          {
+            "question": "What is the groom's actual full name, not his nickname?",
+            "expected": "Miguel Torres",
+            "answer": "Your groom's actual full name is Miguel Torres. If you need any more help with details or have any questions about your wedding planning, feel free to ask. I'm here to assist you in any way I can.",
+            "correct": true
+          },
+          {
+            "question": "What is the venue name?",
+            "expected": "Riverside Gardens",
+            "answer": "You finalized on Riverside Gardens as your wedding venue. It's a beautiful choice with its elegant indoor spaces and garden setting.\n\nIf you need any further assistance with planning or have specific questions, feel free to ask!",
+            "correct": true
+          },
+          {
+            "question": "When is the wedding date?",
+            "expected": "June 15th, 2025",
+            "answer": "Your wedding is planned for June 15th, 2025. If you need any assistance with planning or have any specific questions or preferences, feel free to share them. I'm here to help!",
+            "correct": true
+          },
+          {
+            "question": "What is the total budget?",
+            "expected": "45000",
+            "answer": "Your total budget for the wedding is $45,000. If you need any help with budget allocation or have specific questions about how to spend this budget, feel free to share more details. I'm here to assist you in making the most of your budget!",
+            "correct": false
+          },
+          {
+            "question": "How many guests are expected in the final count?",
+            "expected": "160",
+            "answer": "After finalizing your guest list, you're expecting exactly 160 guests. Here's a breakdown of your budget with 160 guests:\n\n**Total Budget:** $45,000\n\n### Breakdown for 160 Guests:\n\n1. **Venue:** $8,000\n2. **DJ:** $2,500\n3. **Photographer:** $3,200\n4. **Catering:** $6,000 (for 150 guests) + $780 (for 10 extra guests) = $6,780\n5. **Wedding Cake:** $650\n6. **Shuttle Bus:** $800\n7. **Hotel Rooms:** $6,000\n8. **Rings:** $3,500\n9. **Florals:** $2,800\n10. **Personalized Favors:** $720\n11. **Welcome Bags:** $480\n\n**Total Costs:** $8,000 + $2,500 + $3,200 + $6,780 + $650 + $800 + $6,000 + $3,500 + $2,800 + $720 + $480 = $38,970\n\n**Remaining Budget:** $45,000 - $38,970 = $6,030\n\n### Summary:\n\n- **160 Guests:**\n  - **Total Costs:** $38,970\n  - **Remaining Budget:** $6,030\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+            "correct": true
+          },
+          {
+            "question": "What time does the ceremony start?",
+            "expected": "4 PM",
+            "answer": "Your ceremony is planned to start at 4 PM. Here are some suggestions to help everything run smoothly:\n\n**Ceremony (4 PM):**\n\n1. **Preparation:**\n   - Ensure all participants are ready and dressed by 3:30 PM.\n   - Have a designated person or team to assist with any last-minute adjustments.\n\n2. **Timing:**\n   - Aim to start the ceremony exactly at 4 PM.\n   - Keep a schedule to manage the flow of the ceremony and avoid delays.\n\n3. **Photography:**\n   - Capture family photos and portraits before the ceremony.\n   - Ensure the photographer is ready to take photos during the ceremony.\n\n4. **Guest Experience:**\n   - Provide programs or seating charts to help guests find their seats.\n   - Consider a welcome gift or small favor for guests.\n\n**Transition to Reception (4 PM - 6 PM):**\n\n1. **Post-Ceremony Photos:**\n   - Take photos of the newlyweds and bridal party after the ceremony.\n   \n2. **Reception Setup:**\n   - Ensure the reception venue is set up and ready for guests by 5:30 PM.\n   - Offer light refreshments or cocktails to guests while they wait.\n\n**Reception (6 PM):**\n\n1. **Cocktail Hour:**\n   - Start the reception with a cocktail hour at 6 PM.\n   - Provide a choice of beverages and snacks.\n\n2. **Dinner Service:**\n   - Serve a 3-course meal at 6:30 PM.\n   - Offer a choice of main courses (chicken or salmon).\n\n3. **Entertainment:**\n   - Have the DJ or live music ready to start at 7 PM.\n   - Plan a first dance for the newlyweds.\n\nIf you need any more help with planning or have specific questions, feel free to ask!",
+            "correct": true
+          },
+          {
+            "question": "Who is the photographer and what's her full name?",
+            "expected": "Elena Rodriguez",
+            "answer": "Your photographer is Elena Rodriguez. If you need any more help with details or have any questions about your wedding planning, feel free to ask. I'm here to assist you in any way I can.",
+            "correct": true
+          },
+          {
+            "question": "Are they doing a hot-air balloon entrance?",
+            "expected": "no",
+            "answer": "No, they decided against a hot-air balloon entrance as it was considered too dramatic. They are not doing that. If you need more ideas or help with any part of your planning, don't hesitate to ask!",
+            "correct": true
+          },
+          {
+            "question": "Who is the event planner?",
+            "expected": "John",
+            "answer": "Your event planner is John. He will handle vendor coordination for your wedding. If you need any more help with planning or have specific questions, feel free to ask. I'm here to assist you!",
+            "correct": true
+          },
+          {
+            "question": "Which venue did they reject?",
+            "expected": "Seaside Pavilion",
+            "answer": "They almost chose Seaside Pavilion as their wedding venue but decided against it because it was too expensive. Instead, they finalized on Riverside Gardens, which offers a more budget-friendly option with its elegant indoor and outdoor spaces.\n\nIf you need any more help with planning or have specific questions, feel free to ask!",
+            "correct": true
+          },
+          {
+            "question": "Who is coordinating the string quartet?",
+            "expected": "Amy",
+            "answer": "Your cousin Amy is coordinating the string quartet for the ceremony. If you need any more help with planning or have specific questions, feel free to ask!",
+            "correct": true
+          },
+          {
+            "question": "How many wedding cakes are they ordering?",
+            "expected": "one",
+            "answer": "They're planning to order one wedding cake from Sweet Dreams, which serves 200 guests. If you need any more help with planning or have specific questions about your cake, feel free to ask!",
+            "correct": true
+          },
+          {
+            "question": "Are they hiring a videographer?",
+            "expected": "no",
+            "answer": "Based on the information provided, they decided against hiring a videographer. If you need any further assistance with planning or have specific questions, feel free to ask!",
+            "correct": false
+          },
+          {
+            "question": "What transportation did they book for guests?",
+            "expected": "shuttle",
+            "answer": "They decided to book a shuttle bus instead of renting luxury cars. Here's the breakdown:\n\n**Shuttle Bus:** \n- Cost: $800\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+            "correct": true
+          }
+        ]
+      }
+    },
+    "trend": {
+      "firstHalfAvg": 8,
+      "secondHalfAvg": 8.291666666666666,
+      "change": 0.2916666666666661
+    }
+  },
+  "detailedResults": {
+    "judgements": [
+      {
+        "turn": 10,
+        "question": "My maid of honor is my sister Jessica and his best man is his brother David.",
+        "consistency_score": 8,
+        "completeness_score": 9,
+        "accuracy_score": 7,
+        "relevance_score": 10,
+        "overall_score": 8,
+        "winner": "baseline",
+        "reasoning": "The baseline answer is consistent with the context and directly addresses the question. It acknowledges the choice of family members for important roles and offers a brief, relevant response. The summarized answer, while more detailed, includes some information that is not directly relevant to the question asked, such as specific ideas for making their roles memorable. However, it is still relevant and complete."
+      },
+      {
+        "turn": 14,
+        "question": "The ceremony will have live music - a string quartet for $1,200. My cousin Amy is coordinating that.",
+        "consistency_score": 8,
+        "completeness_score": 9,
+        "accuracy_score": 7,
+        "relevance_score": 10,
+        "overall_score": 8,
+        "winner": "baseline",
+        "reasoning": "The baseline answer is consistent with the context and directly addresses the question, providing a positive response to the choice of live music and acknowledging the cousin's role. The summarized answer provides additional budget details, which, while informative, are not directly relevant to the specific question about the string quartet. The summarized answer's calculations are accurate, but the additional information makes it less relevant to the specific question."
+      },
+      {
+        "turn": 20,
+        "question": "We also need to buy rings - I'm budgeting $3,500 for both.",
+        "consistency_score": 8,
+        "completeness_score": 9,
+        "accuracy_score": 7,
+        "relevance_score": 10,
+        "overall_score": 8,
+        "winner": "baseline",
+        "reasoning": "The baseline answer is more consistent with the established facts, provides a more complete breakdown, and is more accurate in its calculations. However, the summarized answer is also relevant and provides a good overview. The baseline answer wins due to its detailed breakdown and accurate calculations."
+      },
+      {
+        "turn": 24,
+        "question": "We thought about doing a hot-air balloon entrance but decided that's too dramatic. We're not doing that.",
+        "consistency_score": 8,
+        "completeness_score": 9,
+        "accuracy_score": 7,
+        "relevance_score": 10,
+        "overall_score": 8,
+        "winner": "baseline",
+        "reasoning": "The baseline answer is more consistent with the established facts, as it acknowledges the decision to reject the hot-air balloon entrance and offers to help with other aspects of the wedding planning. The summarized answer, while relevant, provides additional suggestions that were not part of the original context."
+      },
+      {
+        "turn": 30,
+        "question": "What are our wedding colors?",
+        "consistency_score": 8,
+        "completeness_score": 9,
+        "accuracy_score": 7,
+        "relevance_score": 10,
+        "overall_score": 8,
+        "winner": "baseline",
+        "reasoning": "The baseline answer is more consistent with the established facts, as it acknowledges the use of a tool to remember preferences and provides a complete and accurate response. The summarized answer is also relevant and accurate but lacks the additional context provided by the baseline answer."
+      },
+      {
+        "turn": 32,
+        "question": "What time does the ceremony start?",
+        "consistency_score": 8,
+        "completeness_score": 9,
+        "accuracy_score": 7,
+        "relevance_score": 10,
+        "overall_score": 8,
+        "winner": "baseline",
+        "reasoning": "The baseline answer directly and accurately states the ceremony start time, which is relevant and consistent with the established facts. However, the summarized answer provides additional, albeit detailed, information that goes beyond the question but is still relevant and accurate. The baseline answer is more concise and directly answers the question, making it the better choice."
+      },
+      {
+        "turn": 40,
+        "question": "Can we afford to add a photo booth for $900 within our budget?",
+        "consistency_score": 8,
+        "completeness_score": 9,
+        "accuracy_score": 7,
+        "relevance_score": 10,
+        "overall_score": 8,
+        "winner": "baseline",
+        "reasoning": "The baseline answer is more consistent with the established facts, as it uses the correct remaining budget and provides accurate calculations. The summarized answer uses a different remaining budget, which may not align with the actual budget, leading to a lower score in consistency and accuracy."
+      },
+      {
+        "turn": 50,
+        "question": "What's the difference in catering cost between our original 150 and final 160 guest count?",
+        "consistency_score": 8,
+        "completeness_score": 9,
+        "accuracy_score": 7,
+        "relevance_score": 10,
+        "overall_score": 8,
+        "winner": "baseline",
+        "reasoning": "The baseline answer is more consistent with the established facts, as it uses the correct remaining budget and provides accurate calculations. The summarized answer is also relevant and accurate but lacks the additional context provided by the baseline answer."
+      },
+      {
+        "turn": 51,
+        "question": "Who is coordinating the string quartet?",
+        "consistency_score": 8,
+        "completeness_score": 9,
+        "accuracy_score": 7,
+        "relevance_score": 10,
+        "overall_score": 8,
+        "winner": "baseline",
+        "reasoning": "Both answers are consistent, complete, accurate, and relevant. However, the baseline answer provides a bit more context and offers additional help, making it the slight winner."
+      },
+      {
+        "turn": 60,
+        "question": "Create a timeline for the wedding day from 2 PM to 11 PM with all events.",
+        "consistency_score": 8,
+        "completeness_score": 9,
+        "accuracy_score": 7,
+        "relevance_score": 10,
+        "overall_score": 8,
+        "winner": "baseline",
+        "reasoning": "The baseline answer aligns well with the established facts and provides a detailed timeline. However, the summarized answer is more concise and includes additional details that make it more complete. The baseline answer is slightly more consistent with the provided context, but the summarized answer is more relevant and complete."
+      },
+      {
+        "turn": 70,
+        "question": "We thought about renting luxury cars but went with the shuttle bus instead. What transport did we book?",
+        "consistency_score": 8,
+        "completeness_score": 9,
+        "accuracy_score": 7,
+        "relevance_score": 10,
+        "overall_score": 8,
+        "winner": "baseline",
+        "reasoning": "The baseline answer is more consistent with the established facts and provides a more comprehensive response. It aligns with the context and directly answers the question. The summarized answer is also accurate and relevant, but it lacks the additional context and thoroughness of the baseline answer."
+      },
+      {
+        "turn": 80,
+        "question": "Final check: what is the groom's actual full name, not the nickname?",
+        "consistency_score": 10,
+        "completeness_score": 9,
+        "accuracy_score": 10,
+        "relevance_score": 10,
+        "overall_score": 9.75,
+        "winner": "baseline",
+        "reasoning": "Both answers are consistent, accurate, and relevant. The baseline answer provides a bit more completeness by mentioning the nickname, which adds context."
+      }
+    ],
+    "tokenTracking": [
+      {
+        "turn": 1,
+        "baselineTokens": 104,
+        "summarizedTokens": 104,
+        "summaryActive": false,
+        "compressionRatio": "100.0%"
+      },
+      {
+        "turn": 2,
+        "baselineTokens": 306,
+        "summarizedTokens": 475,
+        "summaryActive": false,
+        "compressionRatio": "155.2%"
+      },
+      {
+        "turn": 3,
+        "baselineTokens": 662,
+        "summarizedTokens": 1369,
+        "summaryActive": false,
+        "compressionRatio": "206.8%"
+      },
+      {
+        "turn": 4,
+        "baselineTokens": 1179,
+        "summarizedTokens": 2682,
+        "summaryActive": false,
+        "compressionRatio": "227.5%"
+      },
+      {
+        "turn": 5,
+        "baselineTokens": 1808,
+        "summarizedTokens": 4089,
+        "summaryActive": false,
+        "compressionRatio": "226.2%"
+      },
+      {
+        "turn": 6,
+        "baselineTokens": 2578,
+        "summarizedTokens": 6216,
+        "summaryActive": false,
+        "compressionRatio": "241.1%"
+      },
+      {
+        "turn": 7,
+        "baselineTokens": 3471,
+        "summarizedTokens": 8901,
+        "summaryActive": false,
+        "compressionRatio": "256.4%"
+      },
+      {
+        "turn": 8,
+        "baselineTokens": 4544,
+        "summarizedTokens": 12021,
+        "summaryActive": false,
+        "compressionRatio": "264.5%"
+      },
+      {
+        "turn": 9,
+        "baselineTokens": 5769,
+        "summarizedTokens": 15683,
+        "summaryActive": false,
+        "compressionRatio": "271.8%"
+      },
+      {
+        "turn": 10,
+        "baselineTokens": 7133,
+        "summarizedTokens": 19888,
+        "summaryActive": false,
+        "compressionRatio": "278.8%"
+      },
+      {
+        "turn": 11,
+        "baselineTokens": 8622,
+        "summarizedTokens": 24682,
+        "summaryActive": false,
+        "compressionRatio": "286.3%"
+      },
+      {
+        "turn": 12,
+        "baselineTokens": 10180,
+        "summarizedTokens": 29569,
+        "summaryActive": false,
+        "compressionRatio": "290.5%"
+      },
+      {
+        "turn": 13,
+        "baselineTokens": 11813,
+        "summarizedTokens": 34775,
+        "summaryActive": false,
+        "compressionRatio": "294.4%"
+      },
+      {
+        "turn": 14,
+        "baselineTokens": 13583,
+        "summarizedTokens": 40589,
+        "summaryActive": false,
+        "compressionRatio": "298.8%"
+      },
+      {
+        "turn": 15,
+        "baselineTokens": 15473,
+        "summarizedTokens": 47044,
+        "summaryActive": false,
+        "compressionRatio": "304.0%"
+      },
+      {
+        "turn": 16,
+        "baselineTokens": 17506,
+        "summarizedTokens": 54207,
+        "summaryActive": false,
+        "compressionRatio": "309.6%"
+      },
+      {
+        "turn": 17,
+        "baselineTokens": 19660,
+        "summarizedTokens": 62085,
+        "summaryActive": false,
+        "compressionRatio": "315.8%"
+      },
+      {
+        "turn": 18,
+        "baselineTokens": 21940,
+        "summarizedTokens": 70469,
+        "summaryActive": false,
+        "compressionRatio": "321.2%"
+      },
+      {
+        "turn": 19,
+        "baselineTokens": 27127,
+        "summarizedTokens": 79411,
+        "summaryActive": false,
+        "compressionRatio": "292.7%"
+      },
+      {
+        "turn": 20,
+        "baselineTokens": 30106,
+        "summarizedTokens": 88943,
+        "summaryActive": false,
+        "compressionRatio": "295.4%"
+      },
+      {
+        "turn": 21,
+        "baselineTokens": 33342,
+        "summarizedTokens": 98830,
+        "summaryActive": false,
+        "compressionRatio": "296.4%"
+      },
+      {
+        "turn": 22,
+        "baselineTokens": 36912,
+        "summarizedTokens": 109112,
+        "summaryActive": false,
+        "compressionRatio": "295.6%"
+      },
+      {
+        "turn": 23,
+        "baselineTokens": 40600,
+        "summarizedTokens": 119476,
+        "summaryActive": false,
+        "compressionRatio": "294.3%"
+      },
+      {
+        "turn": 24,
+        "baselineTokens": 44412,
+        "summarizedTokens": 130104,
+        "summaryActive": false,
+        "compressionRatio": "292.9%"
+      },
+      {
+        "turn": 25,
+        "baselineTokens": 48300,
+        "summarizedTokens": 141221,
+        "summaryActive": false,
+        "compressionRatio": "292.4%"
+      },
+      {
+        "turn": 26,
+        "baselineTokens": 52236,
+        "summarizedTokens": 152406,
+        "summaryActive": false,
+        "compressionRatio": "291.8%"
+      },
+      {
+        "turn": 27,
+        "baselineTokens": 56210,
+        "summarizedTokens": 163642,
+        "summaryActive": true,
+        "compressionRatio": "291.1%"
+      },
+      {
+        "turn": 28,
+        "baselineTokens": 60223,
+        "summarizedTokens": 174946,
+        "summaryActive": true,
+        "compressionRatio": "290.5%"
+      },
+      {
+        "turn": 29,
+        "baselineTokens": 64292,
+        "summarizedTokens": 186313,
+        "summaryActive": true,
+        "compressionRatio": "289.8%"
+      },
+      {
+        "turn": 30,
+        "baselineTokens": 68453,
+        "summarizedTokens": 197740,
+        "summaryActive": true,
+        "compressionRatio": "288.9%"
+      },
+      {
+        "turn": 31,
+        "baselineTokens": 72676,
+        "summarizedTokens": 209519,
+        "summaryActive": true,
+        "compressionRatio": "288.3%"
+      },
+      {
+        "turn": 32,
+        "baselineTokens": 76940,
+        "summarizedTokens": 221737,
+        "summaryActive": true,
+        "compressionRatio": "288.2%"
+      },
+      {
+        "turn": 33,
+        "baselineTokens": 81264,
+        "summarizedTokens": 234360,
+        "summaryActive": true,
+        "compressionRatio": "288.4%"
+      },
+      {
+        "turn": 34,
+        "baselineTokens": 85674,
+        "summarizedTokens": 247266,
+        "summaryActive": true,
+        "compressionRatio": "288.6%"
+      },
+      {
+        "turn": 35,
+        "baselineTokens": 90143,
+        "summarizedTokens": 260237,
+        "summaryActive": true,
+        "compressionRatio": "288.7%"
+      },
+      {
+        "turn": 36,
+        "baselineTokens": 94728,
+        "summarizedTokens": 273467,
+        "summaryActive": true,
+        "compressionRatio": "288.7%"
+      },
+      {
+        "turn": 37,
+        "baselineTokens": 99370,
+        "summarizedTokens": 286754,
+        "summaryActive": true,
+        "compressionRatio": "288.6%"
+      },
+      {
+        "turn": 38,
+        "baselineTokens": 104133,
+        "summarizedTokens": 300305,
+        "summaryActive": true,
+        "compressionRatio": "288.4%"
+      },
+      {
+        "turn": 39,
+        "baselineTokens": 109010,
+        "summarizedTokens": 314043,
+        "summaryActive": true,
+        "compressionRatio": "288.1%"
+      },
+      {
+        "turn": 40,
+        "baselineTokens": 114001,
+        "summarizedTokens": 327937,
+        "summaryActive": true,
+        "compressionRatio": "287.7%"
+      },
+      {
+        "turn": 41,
+        "baselineTokens": 119114,
+        "summarizedTokens": 342084,
+        "summaryActive": true,
+        "compressionRatio": "287.2%"
+      },
+      {
+        "turn": 42,
+        "baselineTokens": 124360,
+        "summarizedTokens": 356358,
+        "summaryActive": true,
+        "compressionRatio": "286.6%"
+      },
+      {
+        "turn": 43,
+        "baselineTokens": 129699,
+        "summarizedTokens": 370737,
+        "summaryActive": true,
+        "compressionRatio": "285.8%"
+      },
+      {
+        "turn": 44,
+        "baselineTokens": 135159,
+        "summarizedTokens": 385302,
+        "summaryActive": true,
+        "compressionRatio": "285.1%"
+      },
+      {
+        "turn": 45,
+        "baselineTokens": 140697,
+        "summarizedTokens": 399955,
+        "summaryActive": true,
+        "compressionRatio": "284.3%"
+      },
+      {
+        "turn": 46,
+        "baselineTokens": 146335,
+        "summarizedTokens": 414769,
+        "summaryActive": true,
+        "compressionRatio": "283.4%"
+      },
+      {
+        "turn": 47,
+        "baselineTokens": 152069,
+        "summarizedTokens": 429675,
+        "summaryActive": true,
+        "compressionRatio": "282.6%"
+      },
+      {
+        "turn": 48,
+        "baselineTokens": 157900,
+        "summarizedTokens": 444732,
+        "summaryActive": true,
+        "compressionRatio": "281.7%"
+      },
+      {
+        "turn": 49,
+        "baselineTokens": 163827,
+        "summarizedTokens": 459912,
+        "summaryActive": true,
+        "compressionRatio": "280.7%"
+      },
+      {
+        "turn": 50,
+        "baselineTokens": 169901,
+        "summarizedTokens": 475295,
+        "summaryActive": true,
+        "compressionRatio": "279.7%"
+      },
+      {
+        "turn": 51,
+        "baselineTokens": 176030,
+        "summarizedTokens": 490727,
+        "summaryActive": true,
+        "compressionRatio": "278.8%"
+      },
+      {
+        "turn": 52,
+        "baselineTokens": 182213,
+        "summarizedTokens": 506220,
+        "summaryActive": true,
+        "compressionRatio": "277.8%"
+      },
+      {
+        "turn": 53,
+        "baselineTokens": 188562,
+        "summarizedTokens": 521921,
+        "summaryActive": true,
+        "compressionRatio": "276.8%"
+      },
+      {
+        "turn": 54,
+        "baselineTokens": 195001,
+        "summarizedTokens": 537824,
+        "summaryActive": true,
+        "compressionRatio": "275.8%"
+      },
+      {
+        "turn": 55,
+        "baselineTokens": 208121,
+        "summarizedTokens": 553823,
+        "summaryActive": true,
+        "compressionRatio": "266.1%"
+      },
+      {
+        "turn": 56,
+        "baselineTokens": 214747,
+        "summarizedTokens": 569919,
+        "summaryActive": true,
+        "compressionRatio": "265.4%"
+      },
+      {
+        "turn": 57,
+        "baselineTokens": 221903,
+        "summarizedTokens": 586489,
+        "summaryActive": true,
+        "compressionRatio": "264.3%"
+      },
+      {
+        "turn": 58,
+        "baselineTokens": 229184,
+        "summarizedTokens": 603223,
+        "summaryActive": true,
+        "compressionRatio": "263.2%"
+      },
+      {
+        "turn": 59,
+        "baselineTokens": 236614,
+        "summarizedTokens": 620146,
+        "summaryActive": true,
+        "compressionRatio": "262.1%"
+      },
+      {
+        "turn": 60,
+        "baselineTokens": 244374,
+        "summarizedTokens": 637611,
+        "summaryActive": true,
+        "compressionRatio": "260.9%"
+      },
+      {
+        "turn": 61,
+        "baselineTokens": 252215,
+        "summarizedTokens": 655150,
+        "summaryActive": true,
+        "compressionRatio": "259.8%"
+      },
+      {
+        "turn": 62,
+        "baselineTokens": 260151,
+        "summarizedTokens": 672788,
+        "summaryActive": true,
+        "compressionRatio": "258.6%"
+      },
+      {
+        "turn": 63,
+        "baselineTokens": 268166,
+        "summarizedTokens": 690492,
+        "summaryActive": true,
+        "compressionRatio": "257.5%"
+      },
+      {
+        "turn": 64,
+        "baselineTokens": 276274,
+        "summarizedTokens": 708320,
+        "summaryActive": true,
+        "compressionRatio": "256.4%"
+      },
+      {
+        "turn": 65,
+        "baselineTokens": 284489,
+        "summarizedTokens": 726216,
+        "summaryActive": true,
+        "compressionRatio": "255.3%"
+      },
+      {
+        "turn": 66,
+        "baselineTokens": 292816,
+        "summarizedTokens": 744255,
+        "summaryActive": true,
+        "compressionRatio": "254.2%"
+      },
+      {
+        "turn": 67,
+        "baselineTokens": 8505,
+        "summarizedTokens": 18155,
+        "summaryActive": false,
+        "compressionRatio": "213.5%"
+      },
+      {
+        "turn": 68,
+        "baselineTokens": 17265,
+        "summarizedTokens": 36555,
+        "summaryActive": false,
+        "compressionRatio": "211.7%"
+      },
+      {
+        "turn": 69,
+        "baselineTokens": 26149,
+        "summarizedTokens": 55093,
+        "summaryActive": false,
+        "compressionRatio": "210.7%"
+      },
+      {
+        "turn": 70,
+        "baselineTokens": 35146,
+        "summarizedTokens": 73710,
+        "summaryActive": false,
+        "compressionRatio": "209.7%"
+      },
+      {
+        "turn": 71,
+        "baselineTokens": 44241,
+        "summarizedTokens": 92417,
+        "summaryActive": false,
+        "compressionRatio": "208.9%"
+      },
+      {
+        "turn": 72,
+        "baselineTokens": 53436,
+        "summarizedTokens": 111222,
+        "summaryActive": false,
+        "compressionRatio": "208.1%"
+      },
+      {
+        "turn": 73,
+        "baselineTokens": 62775,
+        "summarizedTokens": 130219,
+        "summaryActive": false,
+        "compressionRatio": "207.4%"
+      },
+      {
+        "turn": 74,
+        "baselineTokens": 72212,
+        "summarizedTokens": 149321,
+        "summaryActive": false,
+        "compressionRatio": "206.8%"
+      },
+      {
+        "turn": 75,
+        "baselineTokens": 9665,
+        "summarizedTokens": 19247,
+        "summaryActive": false,
+        "compressionRatio": "199.1%"
+      },
+      {
+        "turn": 76,
+        "baselineTokens": 19449,
+        "summarizedTokens": 38670,
+        "summaryActive": false,
+        "compressionRatio": "198.8%"
+      },
+      {
+        "turn": 77,
+        "baselineTokens": 29404,
+        "summarizedTokens": 58300,
+        "summaryActive": false,
+        "compressionRatio": "198.3%"
+      },
+      {
+        "turn": 78,
+        "baselineTokens": 39471,
+        "summarizedTokens": 78044,
+        "summaryActive": false,
+        "compressionRatio": "197.7%"
+      },
+      {
+        "turn": 79,
+        "baselineTokens": 49660,
+        "summarizedTokens": 98028,
+        "summaryActive": false,
+        "compressionRatio": "197.4%"
+      },
+      {
+        "turn": 80,
+        "baselineTokens": 59909,
+        "summarizedTokens": 118078,
+        "summaryActive": false,
+        "compressionRatio": "197.1%"
+      }
+    ]
+  },
+  "responses": {
+    "baseline": [
+      "Hi Sarah! It's great to meet you. I've noted that you're planning a wedding for June 15th, 2025. If you need any help or advice with your wedding planning, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, venues, Sarah Chen). This will be remembered in all future chats.\n\nThose are both beautiful venues in Portland, Oregon! Seaside Pavilion offers a stunning ocean view, while Riverside Gardens provides a charming riverside setting. Both could make for a memorable wedding day. If you need more information or assistance with your venue selection, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, budget, Sarah Chen). This will be remembered in all future chats.\n\nWith a budget of $45,000 and an expected guest list of 150-175, you'll have plenty of options to ensure your wedding day is both beautiful and within budget. It's important to consider all aspects of the wedding, including venue, catering, decorations, and entertainment, to make the most of your budget. If you need help planning or have any specific questions, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, venue cost, Sarah Chen). This will be remembered in all future chats.\n\nThat's a great deal for Riverside Gardens! With the venue costing $8,000 and including tables, chairs, and setup, it could be a cost-effective option for your wedding. This leaves you with a remaining budget of $37,000 for other aspects of your wedding, such as catering, decorations, entertainment, and more. If you need help with further planning or have any other questions, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, fiancé, Sarah Chen). This will be remembered in all future chats.\n\nCongratulations on your engagement, Sarah and Michael! It's wonderful to hear that you've been together for 5 years. If you need any help with planning your wedding or have any other questions, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, theme, Sarah Chen). This will be remembered in all future chats.\n\nA summer theme with sunflowers and light blue colors sounds beautiful and refreshing! Sunflowers can add a cheerful and vibrant touch to your wedding, while light blue colors can create a serene and elegant atmosphere. If you need help with decorations, floral arrangements, or any other aspect of your wedding theme, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, schedule, Sarah Chen). This will be remembered in all future chats.\n\nThat's a lovely schedule for your wedding day! Starting the ceremony at 4 PM and the reception at 6 PM will give your guests plenty of time to relax and enjoy the festivities. If you need help with planning the timeline or any other aspect of your wedding, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, entertainment, Sarah Chen). This will be remembered in all future chats.\n\nHiring DJ Marcus and photographer Elena Rodriguez is a great choice! DJ Marcus will provide great music for your guests, and Elena Rodriguez will capture all the beautiful moments of your special day. With these costs, you've allocated $5,700 for entertainment, leaving you with a remaining budget of $39,300 for other aspects of your wedding, such as catering, decorations, and more. If you need help with further planning or have any other questions, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, catering, Sarah Chen). This will be remembered in all future chats.\n\nCatering from Bella's Kitchen at $85 per person is a great choice! For 150 guests, the total cost would be $12,750, and for 175 guests, it would be $14,875. This leaves you with a remaining budget of $26,550 to $29,675 for other aspects of your wedding, such as decorations, entertainment, and more. If you need help with further planning or have any other questions, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, wedding party, Sarah Chen). This will be remembered in all future chats.\n\nHaving your sister Jessica as your maid of honor and his brother David as his best man is a wonderful choice! Family involvement in your wedding party can add a special touch to your special day. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, venue, Sarah Chen). This will be remembered in all future chats.\n\nRiverside Gardens is a wonderful choice! It provides a charming riverside setting that can create a beautiful backdrop for your wedding. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nThe total catering cost for 150 guests at $85 per person would be $12,750.\n\nIf you need help with further planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nThe total cost for hotel rooms for 40 out-of-town guests at $150 per night would be $6,000.\n\nIf you need help with further planning or have any other questions, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, entertainment, Sarah Chen). This will be remembered in all future chats.\n\nHaving live music at your ceremony is a wonderful touch! A string quartet for $1,200 is a great choice, and it's wonderful that your cousin Amy is coordinating that. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, menu, Sarah Chen). This will be remembered in all future chats.\n\nA 3-course meal with a salad, choice of chicken or salmon, and dessert sounds delicious! It's a great way to offer variety and cater to different tastes. If you need help with menu planning or have any other questions, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, cake, Sarah Chen). This will be remembered in all future chats.\n\nA wedding cake from Sweet Dreams that costs $650 and serves 200 is a great choice! It's a beautiful centerpiece for your reception and will be a delicious treat for your guests. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, transportation, Sarah Chen). This will be remembered in all future chats.\n\nRenting a shuttle bus for $800 to transport guests from hotels is a great idea to ensure everyone gets to your venue comfortably. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, favors, Sarah Chen). This will be remembered in all future chats.\n\nPersonalized favors like small succulents that cost $4.50 each are a wonderful idea! They're unique, eco-friendly, and guests can enjoy them long after the wedding. If you need help with planning the number of favors or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nLet's break down the costs so far:\n\n1. **Venue (Riverside Gardens)**: $8,000\n2. **DJ Marcus**: $2,500\n3. **Photographer (Elena Rodriguez)**: $3,200\n4. **Catering**: $12,750 (for 150 guests)\n5. **Hotel rooms for 40 guests**: $6,000\n6. **String quartet**: $1,200\n7. **Wedding cake**: $650\n8. **Shuttle bus**: $800\n9. **Personalized favors (small succulents)**: Let's assume you plan to give 100 favors at $4.50 each, which would be $450.\n\nTotal spending so far: $8,000 + $2,500 + $3,200 + $12,750 + $6,000 + $1,200 + $650 + $800 + $450 = $35,150.\n\nRemaining budget: $45,000 - $35,150 = $9,850.\n\nSo, you have a remaining budget of $9,850 for other aspects of your wedding, such as decorations, entertainment, and any additional costs that may arise.",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, rings, Sarah Chen). This will be remembered in all future chats.\n\nBuying rings for $3,500 is a significant investment, but it's an important part of your special day. If you need help finding the perfect rings or have any other questions, feel free to ask!\n\nLet's update the budget calculations:\n\n1. **Venue (Riverside Gardens)**: $8,000\n2. **DJ Marcus**: $2,500\n3. **Photographer (Elena Rodriguez)**: $3,200\n4. **Catering**: $12,750 (for 150 guests)\n5. **Hotel rooms for 40 guests**: $6,000\n6. **String quartet**: $1,200\n7. **Wedding cake**: $650\n8. **Shuttle bus**: $800\n9. **Personalized favors (small succulents)**: $450\n10. **Rings**: $3,500\n\nTotal spending so far: $8,000 + $2,500 + $3,200 + $12,750 + $6,000 + $1,200 + $650 + $800 + $450 + $3,500 = $39,050.\n\nRemaining budget: $45,000 - $39,050 = $5,950.\n\nSo, you have a remaining budget of $5,950 for other aspects of your wedding, such as decorations, entertainment, and any additional costs that may arise.",
+      "[Used tool: calculator]\n\nLet's update the catering cost based on the new guest count of 160:\n\nCatering cost: $85 per person × 160 guests = $13,600.\n\nLet's recalculate the total spending and remaining budget:\n\n1. **Venue (Riverside Gardens)**: $8,000\n2. **DJ Marcus**: $2,500\n3. **Photographer (Elena Rodriguez)**: $3,200\n4. **Catering**: $13,600 (for 160 guests)\n5. **Hotel rooms for 40 guests**: $6,000\n6. **String quartet**: $1,200\n7. **Wedding cake**: $650\n8. **Shuttle bus**: $800\n9. **Personalized favors (small succulents)**: $450\n10. **Rings**: $3,500\n\nTotal spending so far: $8,000 + $2,500 + $3,200 + $13,600 + $6,000 + $1,200 + $650 + $800 + $450 + $3,500 = $40,150.\n\nRemaining budget: $45,000 - $40,150 = $4,850.\n\nSo, with the updated guest count, you have a remaining budget of $4,850 for other aspects of your wedding, such as decorations, entertainment, and any additional costs that may arise.",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, florist, Sarah Chen). This will be remembered in all future chats.\n\nIt's good to clarify the details! The florist quoted $2,800 for ceremony and reception arrangements, which is a great touch. If you need help with planning the floral arrangements or have any other questions, feel free to ask!\n\nLet's update the budget calculations:\n\n1. **Venue (Riverside Gardens)**: $8,000\n2. **DJ Marcus**: $2,500\n3. **Photographer (Elena Rodriguez)**: $3,200\n4. **Catering**: $13,600 (for 160 guests)\n5. **Hotel rooms for 40 guests**: $6,000\n6. **String quartet**: $1,200\n7. **Wedding cake**: $650\n8. **Shuttle bus**: $800\n9. **Personalized favors (small succulents)**: $450\n10. **Rings**: $3,500\n11. **Floral arrangements**: $2,800\n\nTotal spending so far: $8,000 + $2,500 + $3,200 + $13,600 + $6,000 + $1,200 + $650 + $800 + $450 + $3,500 + $2,800 = $41,700.\n\nRemaining budget: $45,000 - $41,700 = $3,300.\n\nSo, with the updated costs, you have a remaining budget of $3,300 for other aspects of your wedding, such as decorations, entertainment, and any additional costs that may arise.",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, fiancé, Sarah Chen). This will be remembered in all future chats.\n\nThank you for letting me know, Sarah! I'll remember that your fiancé's name is Miguel Torres, and Michael is his nickname. If you need any help with planning your wedding or have any other questions, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, entrance, Sarah Chen). This will be remembered in all future chats.\n\nIt's understandable that you want your entrance to be memorable but also appropriate for your style. If you have any other ideas for your entrance or need help with any other aspect of your wedding planning, feel free to ask!",
+      "It's good to be aware of the weather conditions, especially if they could affect your outdoor plans. If you need any advice on how to handle potential rain or have any other questions about your wedding planning, feel free to ask!",
+      "You finalized on Riverside Gardens as your venue. It provides a charming riverside setting that can create a beautiful backdrop for your wedding.",
+      "Your wedding is planned for June 15th, 2025. If you need help with planning or have any other questions, feel free to ask!",
+      "Your total budget for the wedding is $45,000. If you need help with planning or have any other questions, feel free to ask!",
+      "You hired photographer Elena Rodriguez, and she is paid $3,200. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, theme, Sarah Chen). This will be remembered in all future chats.\n\nYour wedding colors are sunflowers (yellow) and light blue. If you need help with decorations, floral arrangements, or any other aspect of your wedding theme, feel free to ask!",
+      "After finalizing your guest list, you're expecting exactly 160 guests. If you need help with planning for this number of guests or have any other questions, feel free to ask!",
+      "The ceremony starts at 4 PM. If you need help with planning the timeline or any other aspect of your wedding, feel free to ask!",
+      "Your maid of honor is your sister Jessica, and your best man is your fiancé's brother David. If you need help with any other aspect of your wedding party or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nThe cost of favors for 160 guests at $4.50 each would be $720.\n\nSo, the total cost for personalized favors would be $720. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "Your fiancé's actual name is Miguel Torres, and Michael is his nickname. If you need any help with planning your wedding or have any other questions, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, entrance, Sarah Chen). This will be remembered in all future chats.\n\nYou've decided not to do the hot-air balloon entrance as it's too dramatic for your style. If you have any other ideas for your entrance or need help with any other aspect of your wedding planning, feel free to ask!",
+      "You decided to order one wedding cake from Sweet Dreams, which costs $650 and serves 200. If you need help with any other aspect of your cake or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nLet's calculate the number of each based on the guest count of 160:\n\n1. **Salmon**: 30% of 160 guests = 0.30 × 160 = 48 guests\n2. **Chicken**: 70% of 160 guests = 0.70 × 160 = 112 guests\n\nSo, you need 48 servings of salmon and 112 servings of chicken. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nLet's calculate the percentage of the budget spent so far:\n\nTotal spending: $40,150\nTotal budget: $45,000\n\nPercentage spent: (40,150 / 45,000) × 100 = 89.22%\n\nSo, with the updated guest count, you have spent approximately 89.22% of your budget so far. If you need help with further planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nLet's check if a photo booth fits within your remaining budget:\n\nRemaining budget: $4,850\nCost of photo booth: $900\n\n$4,850 - $900 = $3,950\n\nSince you have $3,950 remaining after adding the photo booth, you can afford it within your budget. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nLet's calculate the combined cost of the DJ, photographer, and catering:\n\n1. **DJ Marcus**: $2,500\n2. **Photographer (Elena Rodriguez)**: $3,200\n3. **Catering**: $13,600 (for 160 guests)\n\nTotal cost for the top 3 vendors: $2,500 + $3,200 + $13,600 = $19,300.\n\nIf you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nThe ceremony starts at 4 PM, and the shuttle needs to arrive 30 minutes before that, so at 3:30 PM.\n\nIf the shuttle takes about 30 minutes to reach Riverside Gardens from the hotel, it should leave the hotel around 3 PM.\n\nSo, the shuttle should leave the hotel at approximately 3 PM. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nLet's calculate the number of children under 12:\n\n25% of 160 guests = 0.25 × 160 = 40 children\n\nSo, there will be 40 children under 12 at your wedding. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nThe cost of hotel rooms for 30 guests at $150 per night would be $4,500.\n\nThe savings would be: $6,000 (original cost for 40 guests) - $4,500 (cost for 30 guests) = $1,500.\n\nSo, by reducing hotel bookings from 40 rooms to 30 rooms, you would save $1,500. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nIf the DJ set is 4 hours starting at 6 PM, it will end at 10 PM.\n\nSo, the DJ set will end at 10 PM. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nLet's calculate the total cost of music:\n\n1. **String quartet**: $1,200\n2. **DJ Marcus**: $2,500\n\nTotal cost for music: $1,200 + $2,500 = $3,700.\n\nSo, the total cost of all music is $3,700. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nDinner starts at 6 PM and lasts for 2 hours, so it ends at 8 PM.\n\nIf dancing begins immediately after dinner, it would start at 8 PM.\n\nSo, dancing would begin at 8 PM. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nLet's calculate the per-guest cost:\n\nTotal budget: $45,000\nConfirmed guest count: 160\n\nPer-guest cost: $45,000 / 160 = $281.25\n\nSo, the per-guest cost is $281.25. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nYou need hotel rooms for 40 out-of-town guests, and each room houses 2 guests.\n\nNumber of rooms needed: 40 / 2 = 20 rooms\n\nSo, there are 20 out-of-town guests. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nLet's calculate the difference in catering cost:\n\n1. **Original cost for 150 guests**: $85 per person × 150 guests = $12,750\n2. **New cost for 160 guests**: $85 per person × 160 guests = $13,600\n\nDifference in catering cost: $13,600 - $12,750 = $850\n\nSo, the difference in catering cost between the original 150 and final 160 guest count is $850. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "Your cousin Amy is coordinating the string quartet for the ceremony. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "The photographer's full name is Elena Rodriguez. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "Here are your vendors listed with their costs in order from most to least expensive:\n\n1. **Catering (for 160 guests)**: $13,600\n2. **Photographer (Elena Rodriguez)**: $3,200\n3. **DJ (Marcus)**: $2,500\n4. **String quartet**: $1,200\n5. **Hotel rooms (for 40 guests)**: $6,000\n6. **Venue (Riverside Gardens)**: $8,000\n7. **Wedding cake**: $650\n8. **Shuttle bus**: $800\n9. **Personalized favors (small succulents)**: $450\n10. **Rings**: $3,500\n11. **Floral arrangements**: $2,800\n\nIf you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "The three biggest expenses so far are:\n\n1. **Catering (for 160 guests)**: $13,600\n2. **Photographer (Elena Rodriguez)**: $3,200\n3. **Venue (Riverside Gardens)**: $8,000\n\nThese are the largest costs in your wedding planning so far. If you need help with further planning or have any other questions, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, venue, Sarah Chen). This will be remembered in all future chats.\n\nYou almost chose Seaside Pavilion as your venue but decided against it because it was too expensive. Riverside Gardens is the venue you've finalized on. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "You decided against Seaside Pavilion because it was too expensive compared to Riverside Gardens. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nTo cut $5,000 from the budget, you could consider the following options:\n\n1. **Drop the Shuttle Bus**: $800\n2. **Reduce the Number of Personalized Favors**: \n   - Current cost: $450\n   - Reduce to 50 favors: 50 × $4.50 = $225\n   - Savings: $450 - $225 = $225\n\nTotal savings: $800 + $225 = $1,025\n\nNext option:\n3. **Reduce the Number of Personalized Favors Further**: \n   - Reduce to 25 favors: 25 × $4.50 = $112.50\n   - Additional savings: $225 - $112.50 = $112.50\n\nTotal savings with this option: $1,025 + $112.50 = $1,137.50\n\nNext option:\n4. **Reduce the Number of Personalized Favors to 0**: \n   - Savings: $450 - $0 = $450\n\nTotal savings with this option: $1,137.50 + $450 = $1,587.50\n\nNext option:\n5. **Reduce the Cost of the Wedding Cake**:\n   - Current cost: $650\n   - Reduce to a simpler design: $500\n   - Savings: $650 - $500 = $150\n\nTotal savings with this option: $1,587.50 + $150 = $1,737.50\n\nNext option:\n6. **Reduce the Cost of the Photographer**:\n   - Current cost: $3,200\n   - Reduce to a more basic package: $2,500\n   - Savings: $3,200 - $2,500 = $700\n\nTotal savings with this option: $1,737.50 + $700 = $2,437.50\n\nNext option:\n7. **Reduce the Cost of the DJ**:\n   - Current cost: $2,500\n   - Reduce to a shorter set time: $2,000\n   - Savings: $2,500 - $2,000 = $500\n\nTotal savings with this option: $2,437.50 + $500 = $2,937.50\n\nNext option:\n8. **Reduce the Cost of the String Quartet**:\n   - Current cost: $1,200\n   - Reduce to a smaller ensemble: $1,000\n   - Savings: $1,200 - $1,000 = $200\n\nTotal savings with this option: $2,937.50 + $200 = $3,137.50\n\nNext option:\n9. **Reduce the Cost of the Hotel Rooms**:\n   - Current cost: $6,000\n   - Reduce to 25 rooms: 25 × $150 = $3,750\n   - Savings: $6,000 - $3,750 = $2,250\n\nTotal savings with this option: $3,137.50 + $2,250 = $5,387.50\n\nBy dropping the shuttle bus and reducing the number of personalized favors to 25, you would save $1,137.50. If you need help with further planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nLet's calculate the total spending on guest accommodations:\n\n1. **Hotel rooms for 40 guests**: $6,000\n2. **Shuttle bus**: $800\n\nTotal spending on guest accommodations: $6,000 + $800 = $6,800.\n\nSo, you are spending a total of $6,800 on guest accommodations (hotel + shuttle). If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nHere's the cost breakdown for food:\n\n1. **Catering per person**: $85\n2. **Total catering cost for 160 guests**: $85 per person × 160 guests = $13,600\n3. **Wedding cake**: $650\n\nTotal food cost: $13,600 + $650 = $14,250\n\nSo, the cost breakdown for food is:\n- Catering per person: $85\n- Total catering cost: $13,600\n- Wedding cake: $650\n\nTotal food cost: $14,250\n\nIf you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "Here's a proposed timeline for your wedding day from 2 PM to 11 PM:\n\n**2:00 PM - 2:30 PM:** Guests arrive and check-in\n\n**2:30 PM - 3:00 PM:** Guests settle in hotel rooms\n\n**3:00 PM - 3:30 PM:** Guests have a cocktail hour\n\n**3:30 PM - 4:00 PM:** Shuttle buses depart for the venue\n\n**4:00 PM - 4:30 PM:** Guests arrive at the venue\n\n**4:30 PM - 5:00 PM:** Guests get seated and settled\n\n**5:00 PM - 5:30 PM:** Ceremony begins\n\n**5:30 PM - 6:00 PM:** Ceremony concludes\n\n**6:00 PM - 6:30 PM:** Dinner begins\n\n**6:30 PM - 7:00 PM:** Guests enjoy the first course (salad)\n\n**7:00 PM - 7:30 PM:** Guests enjoy the second course (choice of chicken or salmon)\n\n**7:30 PM - 8:00 PM:** Guests enjoy the third course (dessert)\n\n**8:00 PM - 8:30 PM:** String quartet performs during dinner\n\n**8:30 PM - 9:00 PM:** Dancing begins\n\n**9:00 PM - 9:30 PM:** DJ Marcus begins the reception music\n\n**9:30 PM - 10:00 PM:** Cake cutting and dessert buffet\n\n**10:00 PM - 10:30 PM:** Guests mingle and dance\n\n**10:30 PM - 11:00 PM:** Final DJ set and closing remarks\n\n**11:00 PM:** Event concludes\n\nThis timeline should ensure a smooth and enjoyable wedding day for you and your guests. If you need any adjustments or have any other questions, feel free to ask!",
+      "You finalized on Riverside Gardens as your venue, which provides a charming riverside setting and has an indoor backup for rainy weather. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nIf all 160 guests attend, plus you and your fiancé, the total headcount would be 160 + 2 = 162.\n\nSo, the total headcount including the couple is 162. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "You decided against hiring a videographer because you found it unnecessary or budget-friendly to not include one. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nThe wedding cake serves 200 guests, but you only have 160 guests.\n\nExtra servings: 200 - 160 = 40\n\nSo, you have 40 extra servings of cake. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, event planner, Sarah Chen). This will be remembered in all future chats.\n\nYour event planner is John, who will handle vendor coordination. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nThe total hotel cost for 40 guests at $150 per night for 2 nights would be:\n\n$150 per night × 2 nights = $300 per guest\n\nTotal hotel cost: $300 per guest × 40 guests = $12,000\n\nSo, the total hotel cost is $12,000. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nThe cost per guest for the venue is:\n\n$8,000 / 160 guests = $50 per guest\n\nSo, the cost per guest for just the venue is $50. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nLet's update the budget calculations with the addition of the premium bar package:\n\n1. **Venue (Riverside Gardens)**: $8,000\n2. **DJ Marcus**: $2,500\n3. **Photographer (Elena Rodriguez)**: $3,200\n4. **Catering**: $13,600 (for 160 guests)\n5. **Hotel rooms for 40 guests**: $6,000\n6. **String quartet**: $1,200\n7. **Wedding cake**: $650\n8. **Shuttle bus**: $800\n9. **Personalized favors (small succulents)**: $450\n10. **Rings**: $3,500\n11. **Floral arrangements**: $2,800\n12. **Premium bar package**: $1,500\n\nTotal spending so far: $8,000 + $2,500 + $3,200 + $13,600 + $6,000 + $1,200 + $650 + $800 + $450 + $3,500 + $2,800 + $1,500 = $43,200.\n\nRemaining budget: $45,000 - $43,200 = $1,800.\n\nSo, with the addition of the premium bar package, your new total spending is $43,200, and you have a remaining budget of $1,800. If you need help with further planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nIf 80 guests are from the bride's side, then the remaining guests from the groom's side would be:\n\n160 guests - 80 guests = 80 guests\n\nSo, there are 80 guests from each side: 80 from the bride's side and 80 from the groom's side. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: remember_preference]\n\nTool result:\n✓ I've stored your preference (personal: wedding, transportation, Sarah Chen). This will be remembered in all future chats.\n\nYou decided to book a shuttle bus instead of renting luxury cars. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "Here's a summary of your wedding details:\n\n- **Bride's Name:** Sarah Chen\n- **Groom's Name:** Miguel Torres (Michael is his nickname)\n- **Date:** June 15th, 2025\n- **Venue:** Riverside Gardens\n- **Guest Count:** 160\n\nIf you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "Here are the roles for your wedding:\n\n1. **Maid of Honor:** Your sister Jessica\n2. **Best Man:** Your fiancé's brother David\n3. **Coordinator:** Your cousin Amy (for the string quartet)\n4. **Event Planner:** John\n\nIf you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\n**Total Music Costs:**\n\n1. **String Quartet**: $1,200\n2. **DJ (Marcus)**: $2,500\n\n**Total Music Costs**: $1,200 + $2,500 = $3,700\n\n**Total Food Costs:**\n\n1. **Catering (for 160 guests)**: $13,600\n2. **Wedding Cake**: $650\n\n**Total Food Costs**: $13,600 + $650 = $14,250\n\nSo, the total music costs are $3,700, and the total food costs are $14,250. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nIf the ceremony is at 4 PM and setup needs to start 6 hours before, the setup time would be:\n\n4 PM - 6 hours = 10 AM\n\nSo, the setup should start at 10 AM. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nHere are the current total spending and remaining budget:\n\n1. **Venue (Riverside Gardens)**: $8,000\n2. **DJ Marcus**: $2,500\n3. **Photographer (Elena Rodriguez)**: $3,200\n4. **Catering**: $13,600 (for 160 guests)\n5. **Hotel rooms for 40 guests**: $6,000\n6. **String quartet**: $1,200\n7. **Wedding cake**: $650\n8. **Shuttle bus**: $800\n9. **Personalized favors (small succulents)**: $450\n10. **Rings**: $3,500\n11. **Floral arrangements**: $2,800\n12. **Premium bar package**: $1,500\n\nTotal spending so far: $8,000 + $2,500 + $3,200 + $13,600 + $6,000 + $1,200 + $650 + $800 + $450 + $3,500 + $2,800 + $1,500 = $43,200.\n\nRemaining budget: $45,000 - $43,200 = $1,800.\n\nSo, your current total spending is $43,200, and your remaining budget is $1,800. If you need help with further planning or have any other questions, feel free to ask!",
+      "Here are the ideas you considered but rejected:\n\n**Venues:**\n- Seaside Pavilion (rejected because it was too expensive)\n\n**Extras:**\n- Hot-air balloon entrance (rejected because it was considered too dramatic)\n\n**Services:**\n- Premium bar package (added later, but not considered initially)\n\nIf you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nLet's calculate the total cost for favors and welcome bags:\n\n1. **Favors for all 160 guests**: \n   - Cost per favor: $4.50\n   - Total cost for favors: 160 guests × $4.50 = $720\n\n2. **Welcome bags for 40 out-of-town guests**: \n   - Cost per welcome bag: $12\n   - Total cost for welcome bags: 40 guests × $12 = $480\n\nTotal gift cost: $720 (favors) + $480 (welcome bags) = $1,200\n\nSo, the total gift cost would be $1,200. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "Here is the complete vendor list with names:\n\n1. **DJ:** Marcus\n2. **Photographer:** Elena Rodriguez\n3. **Caterer:** Bella's Kitchen\n4. **Florist:** (Name not provided, but quoted at $2,800)\n5. **Quartet Coordinator:** Amy (your cousin)\n\nIf you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "[Used tool: calculator]\n\nTool result:\nLet's calculate the percentage of the budget spent so far:\n\nTotal spending: $43,200\nTotal budget: $45,000\n\nPercentage spent: (43,200 / 45,000) × 100 = 96%\n\nSo, if everything goes as planned, you will have used approximately 96% of your $45,000 budget. If you need help with any other aspect of your wedding planning or have any other questions, feel free to ask!",
+      "Your groom's actual full name is Miguel Torres, and Michael is his nickname. If you need any help with planning your wedding or have any other questions, feel free to ask!"
+    ],
+    "summarized": [
+      "Hello Sarah! It's wonderful to hear about your upcoming wedding on June 15th, 2025. If you need any assistance with planning or have any specific questions or preferences, feel free to share them. I'm here to help!",
+      "Both Seaside Pavilion and Riverside Gardens are lovely venues in Portland, Oregon. Here are some key points about each:\n\n**Seaside Pavilion:**\n- **Location:** Situated on the waterfront in the St. Johns neighborhood.\n- **Capacity:** Can accommodate up to 300 guests.\n- **Features:** Offers stunning views of the Columbia River, a large deck for outdoor seating, and a charming indoor space.\n- **Amenities:** Includes a full kitchen, catering services, and a variety of event spaces.\n\n**Riverside Gardens:**\n- **Location:** Located in the heart of the Pearl District.\n- **Capacity:** Can host up to 200 guests.\n- **Features:** Features a beautiful garden setting, a spacious indoor area, and a lovely outdoor terrace.\n- **Amenities:** Offers a full-service catering menu, a professional event staff, and customizable event spaces.\n\nBoth venues offer unique settings and amenities that could make for a memorable wedding. If you're considering either, I recommend visiting both to see which one feels like the perfect fit for your special day. If you need help with anything else, feel free to ask!",
+      "Given your budget of $45,000 and an expected guest list of 150-175, let's consider how this might align with your venue choices:\n\n**Seaside Pavilion:**\n- **Cost:** Typically, venues like Seaside Pavilion can range from $30 to $50 per guest for a full-service event. This means your total cost could be around $4,500 to $8,750 for 150-175 guests.\n- **Inclusions:** This usually includes the venue rental, catering, and some basic services like tables, chairs, and linens.\n- **Additional Costs:** You might need to budget for extras like decor, photography, and entertainment, which could add another $10,000 to $15,000.\n\n**Riverside Gardens:**\n- **Cost:** Similar to Seaside Pavilion, Riverside Gardens might range from $30 to $50 per guest. This means your total cost could be around $4,500 to $8,750 for 150-175 guests.\n- **Inclusions:** This typically includes the venue rental, catering, and some basic services.\n- **Additional Costs:** Extras like decor, photography, and entertainment could add another $10,000 to $15,000.\n\n**Budget Considerations:**\n- With a $45,000 budget, you'll need to allocate funds for both the venue and additional costs. \n- If you're aiming for a full-service event, you might need to prioritize certain areas to stay within budget. For example, you could opt for a more economical catering option or DIY some of the decor.\n- Consider negotiating with the venues for any potential discounts or package deals that might fit your budget.\n\n**Recommendations:**\n- **Venue Selection:** Both venues are within your budget range, but you'll need to decide if you want a more intimate setting (Riverside Gardens) or a waterfront experience (Seaside Pavilion).\n- **Additional Costs:** Allocate around $10,000 to $15,000 for additional costs like decor, photography, and entertainment.\n- **Negotiation:** Don't hesitate to negotiate with the venues to see if they can offer any discounts or package deals.\n\nIf you need more specific advice or help with any part of your planning, feel free to ask!",
+      "Given that Riverside Gardens costs $8,000 and includes tables, chairs, and setup, let's adjust your budget accordingly:\n\n**Total Budget:** $45,000\n\n**Venue Cost:** $8,000\n\n**Remaining Budget:** $45,000 - $8,000 = $37,000\n\n**Expected Guests:** 150-175\n\n**Per Guest Cost:** $37,000 / 150 = $246.67 per guest\n\n**Per Guest Cost:** $37,000 / 175 = $211.43 per guest\n\n**Allocation of Remaining Budget:**\n\n1. **Catering:** \n   - Full-service catering can range from $30 to $50 per guest.\n   - For 150 guests: $30 x 150 = $4,500 to $50 x 150 = $7,500\n   - For 175 guests: $30 x 175 = $5,250 to $50 x 175 = $8,750\n\n2. **Additional Costs:**\n   - **Photography and Videography:** $5,000 to $10,000\n   - **Entertainment:** $2,000 to $5,000\n   - **Florals and Decor:** $2,000 to $5,000\n   - **Attire (Dresses, Suits, etc.):** $5,000 to $10,000\n   - **Miscellaneous (Licenses, Permits, etc.):** $1,000 to $2,000\n\n**Example Budget Breakdown:**\n\n- **Venue:** $8,000\n- **Catering (150 guests, $40 per guest):** $6,000\n- **Photography and Videography:** $7,000\n- **Entertainment:** $3,000\n- **Florals and Decor:** $3,000\n- **Attire:** $7,000\n- **Miscellaneous:** $1,500\n\n**Total:** $8,000 + $6,000 + $7,000 + $3,000 + $3,000 + $7,000 + $1,500 = $35,500\n\n**Remaining Budget:** $37,000 - $35,500 = $1,500\n\nThis budget allows for a full-service event with some room for additional expenses or adjustments. If you're aiming for a more economical approach, you could consider reducing the catering cost or opting for DIY decor.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Congratulations, Michael and Sarah! It's wonderful to hear about your long and happy relationship. If you're planning a wedding and need any advice or assistance, feel free to share more details. Whether it's about venue selection, budget planning, or any other aspect of your big day, I'm here to help!",
+      "A summer theme with sunflowers and light blue colors sounds beautiful and vibrant! Here are some ideas to bring this theme to life:\n\n**Decor:**\n\n1. **Table Settings:**\n   - Use light blue table linens or runners.\n   - Incorporate sunflower centerpieces with vases filled with sunflowers, or sunflower-themed table settings.\n   - Add light blue and white tableware, such as plates, napkins, and cutlery.\n\n2. **Backdrop:**\n   - Create a backdrop with light blue fabric and sunflower prints or arrangements.\n   - You can also hang sunflowers on the backdrop for added texture and color.\n\n3. **Florals:**\n   - Use sunflowers in various arrangements throughout the venue, including the entrance, dance floor, and ceremony area.\n   - Incorporate light blue flowers like baby's breath or hydrangeas to complement the sunflowers.\n\n4. **Lighting:**\n   - Use light blue and white lighting to set the summery mood.\n   - Consider string lights or lanterns in these colors.\n\n**Attire:**\n\n1. **Bridal Bouquet:**\n   - Create a bouquet with sunflowers and light blue flowers.\n   - Consider light blue ribbons or greenery to tie the look together.\n\n2. **Wedding Party Attire:**\n   - Encourage the wedding party to wear light blue or white dresses, suits, or separates.\n   - Incorporate sunflower accessories like corsages or boutonnieres.\n\n3. **Guest Attire:**\n   - Suggest a color palette of light blue, white, and sunflower yellow for guests.\n   - Consider a casual summer dress code.\n\n**Cake and Desserts:**\n\n1. **Wedding Cake:**\n   - Design a cake with light blue and white icing and sunflower decorations.\n   - Consider edible sunflowers or sunflower seeds as toppings.\n\n2. **Dessert Table:**\n   - Include light blue and white-themed desserts like macarons, cupcakes, and pastries.\n   - Decorate with sunflowers and light blue accents.\n\n**Stationery:**\n\n1. **Invitations:**\n   - Use light blue and white as the main colors for the invitation suite.\n   - Incorporate sunflower illustrations or prints.\n\n2. **Programs and Menus:**\n   - Match the color scheme of the invitations.\n   - Include sunflower graphics or designs.\n\n3. **Thank You Notes:**\n   - Continue the light blue and white color scheme.\n   - Add sunflower-themed designs or prints.\n\n**Additional Touches:**\n\n1. **Welcome Signage:**\n   - Use light blue signs with sunflower graphics to welcome guests.\n   \n2. **Photo Booth:**\n   - Set up a photo booth with a summer-themed backdrop featuring sunflowers and light blue colors.\n   - Provide props like sunflower hats, bouquets, and light blue accessories.\n\n3. **Party Favors:**\n   - Consider light blue and sunflower-themed party favors, such as sunflower seeds in light blue bags, or small sunflower plants in light blue pots.\n\nIf you need more specific ideas or help with any part of your planning, feel free to ask!",
+      "That's a lovely timeline for your wedding day! Here are some suggestions to help everything run smoothly:\n\n**Ceremony (4 PM):**\n\n1. **Preparation:**\n   - Ensure all participants are ready and dressed in their attire by 3:30 PM.\n   - Have a designated person or team to assist with any last-minute adjustments.\n\n2. **Timing:**\n   - Aim for the ceremony to start exactly at 4 PM.\n   - Keep a schedule to ensure each part of the ceremony (processional, readings, vows, etc.) stays on track.\n\n3. **Photography:**\n   - Have your photographer capture the family and bridal party photos before the ceremony.\n   - Ensure the photographer is ready to capture key moments during the ceremony.\n\n4. **Guest Experience:**\n   - Provide programs or a seating chart to help guests know where to sit.\n   - Consider a small welcome gift or program with a summer theme.\n\n**Transition (4 PM - 6 PM):**\n\n1. **Post-Ceremony Photos:**\n   - Take photos of the bridal party and family after the ceremony.\n   - Include some candid shots of guests mingling.\n\n2. **Refreshments:**\n   - Offer light refreshments or drinks to guests as they wait for the reception to start.\n   - Consider a small buffet or stations with summer-themed snacks.\n\n3. **Reception Setup:**\n   - Ensure the reception venue is set up and ready by 5:30 PM.\n   - Check that all decor, tables, and seating are in place.\n\n**Reception (6 PM):**\n\n1. **Welcome Guests:**\n   - Greet guests as they arrive for the reception.\n   - Consider a welcome drink or signature cocktail.\n\n2. **First Dance:**\n   - Plan the first dance to start the reception on a high note.\n   - Consider a song that fits the summer theme.\n\n3. **Dinner and Toasts:**\n   - Serve dinner in a timely manner, ensuring guests are comfortable and well-fed.\n   - Schedule in time for toasts and speeches.\n\n4. **Entertainment:**\n   - Plan for live music or a DJ to keep the energy high throughout the reception.\n   - Consider a photo booth or interactive activity for guests.\n\n5. **Party Favors:**\n   - Have party favors ready for guests to take home, incorporating your summer theme.\n\nIf you need more specific advice or help with any part of your planning, feel free to ask!",
+      "Great choices for your wedding! Let's factor in these costs into your budget:\n\n**Total Budget:** $45,000\n\n**Venue Cost:** $8,000\n\n**DJ Cost:** $2,500\n\n**Photographer Cost:** $3,200\n\n**Remaining Budget:** $45,000 - $8,000 - $2,500 - $3,200 = $31,300\n\n**Expected Guests:** 150-175\n\n**Per Guest Cost:** $31,300 / 150 = $208.67 per guest\n\n**Per Guest Cost:** $31,300 / 175 = $178.86 per guest\n\n**Allocation of Remaining Budget:**\n\n1. **Catering:** \n   - Full-service catering can range from $30 to $50 per guest.\n   - For 150 guests: $30 x 150 = $4,500 to $50 x 150 = $7,500\n   - For 175 guests: $30 x 175 = $5,250 to $50 x 175 = $8,750\n\n2. **Additional Costs:**\n   - **Photography and Videography:** $5,000 to $10,000 (already included with photographer's cost)\n   - **Entertainment:** $2,000 to $5,000 (DJ already included)\n   - **Florals and Decor:** $2,000 to $5,000\n   - **Attire (Dresses, Suits, etc.):** $5,000 to $10,000\n   - **Miscellaneous (Licenses, Permits, etc.):** $1,000 to $2,000\n\n**Example Budget Breakdown:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering (150 guests, $40 per guest):** $6,000\n- **Florals and Decor:** $3,000\n- **Attire:** $6,000\n- **Miscellaneous:** $1,500\n\n**Total:** $8,000 + $2,500 + $3,200 + $6,000 + $3,000 + $6,000 + $1,500 = $30,200\n\n**Remaining Budget:** $31,300 - $30,200 = $1,100\n\nThis budget allows for a full-service event with some room for additional expenses or adjustments. If you're aiming for a more economical approach, you could consider reducing the catering cost or opting for DIY decor.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Given that the catering is from Bella's Kitchen at $85 per person, let's factor this into your budget:\n\n**Total Budget:** $45,000\n\n**Venue Cost:** $8,000\n\n**DJ Cost:** $2,500\n\n**Photographer Cost:** $3,200\n\n**Catering Cost:**\n- For 150 guests: $85 x 150 = $12,750\n- For 175 guests: $85 x 175 = $14,875\n\n**Remaining Budget:**\n- For 150 guests: $45,000 - $8,000 - $2,500 - $3,200 - $12,750 = $18,550\n- For 175 guests: $45,000 - $8,000 - $2,500 - $3,200 - $14,875 = $16,425\n\n**Per Guest Cost:**\n- For 150 guests: $18,550 / 150 = $123.67 per guest\n- For 175 guests: $16,425 / 175 = $93.85 per guest\n\n**Allocation of Remaining Budget for 150 Guests:**\n\n1. **Additional Costs:**\n   - **Florals and Decor:** $2,000 to $5,000\n   - **Attire (Dresses, Suits, etc.):** $5,000 to $10,000\n   - **Miscellaneous (Licenses, Permits, etc.):** $1,000 to $2,000\n\n**Example Budget Breakdown for 150 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $12,750\n- **Florals and Decor:** $3,000\n- **Attire:** $6,000\n- **Miscellaneous:** $1,500\n\n**Total:** $8,000 + $2,500 + $3,200 + $12,750 + $3,000 + $6,000 + $1,500 = $37,950\n\n**Remaining Budget:** $45,000 - $37,950 = $7,050\n\n**Allocation of Remaining Budget for 175 Guests:**\n\n1. **Additional Costs:**\n   - **Florals and Decor:** $2,000 to $5,000\n   - **Attire (Dresses, Suits, etc.):** $5,000 to $10,000\n   - **Miscellaneous (Licenses, Permits, etc.):** $1,000 to $2,000\n\n**Example Budget Breakdown for 175 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $14,875\n- **Florals and Decor:** $3,000\n- **Attire:** $6,000\n- **Miscellaneous:** $1,500\n\n**Total:** $8,000 + $2,500 + $3,200 + $14,875 + $3,000 + $6,000 + $1,500 = $39,075\n\n**Remaining Budget:** $45,000 - $39,075 = $5,925\n\nThis budget allows for a full-service event with some room for additional expenses or adjustments. If you're aiming for a more economical approach, you could consider reducing the florals and decor cost or opting for DIY decor.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "That's wonderful! Having family members like Jessica and David in such important roles will surely make your wedding day even more special. Here are a few ideas to make their roles memorable:\n\n**Maid of Honor (Jessica):**\n\n1. **Personalized Speech:**\n   - Encourage Jessica to prepare a heartfelt speech for the reception, sharing her favorite memories with you and how you've grown together.\n\n2. **Special Outfit:**\n   - Coordinate with Jessica to find a beautiful outfit that matches your wedding theme. Consider a custom-made dress or a special accessory.\n\n3. **Memory Book:**\n   - Create a memory book for Jessica, filled with photos and notes from friends and family about their favorite moments with you.\n\n4. **Special Duties:**\n   - Assign Jessica some special duties leading up to the wedding, such as organizing a bridal shower or a bachelorette party.\n\n**Best Man (David):**\n\n1. **Personalized Speech:**\n   - Encourage David to prepare a heartfelt speech for the reception, sharing his favorite memories with Michael and how he's been a supportive brother.\n\n2. **Special Outfit:**\n   - Coordinate with David to find a sharp suit that matches your wedding theme. Consider custom accessories like a tie or pocket square.\n\n3. **Memory Book:**\n   - Create a memory book for David, filled with photos and notes from friends and family about their favorite moments with Michael.\n\n4. **Special Duties:**\n   - Assign David some special duties leading up to the wedding, such as organizing a bachelor party or helping with last-minute preparations.\n\n**Team Effort:**\n\n1. **Joint Activities:**\n   - Plan some joint activities for Jessica and David, like a pre-wedding dinner or a weekend getaway to build camaraderie and create lasting memories.\n\n2. **Thank You Gifts:**\n   - Consider giving Jessica and David personalized thank you gifts that reflect their important roles in your wedding.\n\n3. **Shared Moments:**\n   - Plan a few shared moments during the wedding, such as a group photo with the bridal party or a special dance.\n\nIf you need more ideas or help with planning, feel free to ask!",
+      "That's a great choice! Riverside Gardens is a beautiful venue with its garden setting and charming atmosphere. Here's how you can make the most of it:\n\n**Venue: Riverside Gardens**\n- **Cost:** $8,000 (includes tables, chairs, and setup)\n\n**Budget Breakdown:**\n\n**Total Budget:** $45,000\n\n**Venue Cost:** $8,000\n\n**DJ Cost:** $2,500\n\n**Photographer Cost:** $3,200\n\n**Catering Cost:**\n- For 150 guests: $85 x 150 = $12,750\n- For 175 guests: $85 x 175 = $14,875\n\n**Remaining Budget:**\n- For 150 guests: $45,000 - $8,000 - $2,500 - $3,200 - $12,750 = $18,550\n- For 175 guests: $45,000 - $8,000 - $2,500 - $3,200 - $14,875 = $16,425\n\n**Per Guest Cost:**\n- For 150 guests: $18,550 / 150 = $123.67 per guest\n- For 175 guests: $16,425 / 175 = $93.85 per guest\n\n**Allocation of Remaining Budget for 150 Guests:**\n\n1. **Additional Costs:**\n   - **Florals and Decor:** $2,000 to $5,000\n   - **Attire (Dresses, Suits, etc.):** $5,000 to $10,000\n   - **Miscellaneous (Licenses, Permits, etc.):** $1,000 to $2,000\n\n**Example Budget Breakdown for 150 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $12,750\n- **Florals and Decor:** $3,000\n- **Attire:** $6,000\n- **Miscellaneous:** $1,500\n\n**Total:** $8,000 + $2,500 + $3,200 + $12,750 + $3,000 + $6,000 + $1,500 = $37,950\n\n**Remaining Budget:** $45,000 - $37,950 = $7,050\n\n**Allocation of Remaining Budget for 175 Guests:**\n\n1. **Additional Costs:**\n   - **Florals and Decor:** $2,000 to $5,000\n   - **Attire (Dresses, Suits, etc.):** $5,000 to $10,000\n   - **Miscellaneous (Licenses, Permits, etc.):** $1,000 to $2,000\n\n**Example Budget Breakdown for 175 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $14,875\n- **Florals and Decor:** $3,000\n- **Attire:** $6,000\n- **Miscellaneous:** $1,500\n\n**Total:** $8,000 + $2,500 + $3,200 + $14,875 + $3,000 + $6,000 + $1,500 = $39,075\n\n**Remaining Budget:** $45,000 - $39,075 = $5,925\n\nThis budget allows for a full-service event with some room for additional expenses or adjustments. If you're aiming for a more economical approach, you could consider reducing the florals and decor cost or opting for DIY decor.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Certainly! To calculate the total catering cost for 150 guests at $85 per person:\n\n**Catering Cost:** $85 per guest x 150 guests = $12,750\n\nSo, the total catering cost for 150 guests at Riverside Gardens would be $12,750.\n\nIf you need any more help with budgeting or planning, feel free to ask!",
+      "To calculate the total cost for hotel rooms for 40 out-of-town guests at an average of $150 per night, you can multiply the number of guests by the average nightly rate.\n\n**Total Hotel Cost:**\n- Number of guests: 40\n- Average cost per night: $150\n\n**Calculation:**\n- Total cost = 40 guests x $150/night = $6,000\n\nSo, the total cost for hotel rooms for 40 out-of-town guests at an average of $150 per night would be $6,000.\n\nHere's how you could factor this into your budget:\n\n**Example Budget Breakdown:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering (150 guests, $40 per guest):** $6,000\n- **Florals and Decor:** $3,000\n- **Attire:** $6,000\n- **Miscellaneous:** $1,500\n- **Hotel Rooms:** $6,000\n\n**Total:** $8,000 + $2,500 + $3,200 + $6,000 + $3,000 + $6,000 + $1,500 + $6,000 = $36,200\n\n**Remaining Budget:** $45,000 - $36,200 = $8,800\n\nThis budget allows for a full-service event with some room for additional expenses or adjustments. If you're aiming for a more economical approach, you could consider reducing the florals and decor cost or opting for DIY decor.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Adding live music to your ceremony can create a beautiful and memorable atmosphere. Here's how you can incorporate the string quartet into your budget:\n\n**Total Budget:** $45,000\n\n**Venue Cost:** $8,000\n\n**DJ Cost:** $2,500\n\n**Photographer Cost:** $3,200\n\n**Catering Cost:**\n- For 150 guests: $85 x 150 = $12,750\n- For 175 guests: $85 x 175 = $14,875\n\n**Live Music (String Quartet):**\n- Cost: $1,200\n\n**Remaining Budget:**\n- For 150 guests: $45,000 - $8,000 - $2,500 - $3,200 - $12,750 - $1,200 = $17,300\n- For 175 guests: $45,000 - $8,000 - $2,500 - $3,200 - $14,875 - $1,200 = $15,200\n\n**Per Guest Cost:**\n- For 150 guests: $17,300 / 150 = $115.33 per guest\n- For 175 guests: $15,200 / 175 = $86.86 per guest\n\n**Allocation of Remaining Budget for 150 Guests:**\n\n1. **Additional Costs:**\n   - **Florals and Decor:** $2,000 to $5,000\n   - **Attire (Dresses, Suits, etc.):** $5,000 to $10,000\n   - **Miscellaneous (Licenses, Permits, etc.):** $1,000 to $2,000\n\n**Example Budget Breakdown for 150 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $12,750\n- **Live Music (String Quartet):** $1,200\n- **Florals and Decor:** $3,000\n- **Attire:** $6,000\n- **Miscellaneous:** $1,500\n\n**Total:** $8,000 + $2,500 + $3,200 + $12,750 + $1,200 + $3,000 + $6,000 + $1,500 = $35,150\n\n**Remaining Budget:** $45,000 - $35,150 = $9,850\n\n**Allocation of Remaining Budget for 175 Guests:**\n\n1. **Additional Costs:**\n   - **Florals and Decor:** $2,000 to $5,000\n   - **Attire (Dresses, Suits, etc.):** $5,000 to $10,000\n   - **Miscellaneous (Licenses, Permits, etc.):** $1,000 to $2,000\n\n**Example Budget Breakdown for 175 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $14,875\n- **Live Music (String Quartet):** $1,200\n- **Florals and Decor:** $3,000\n- **Attire:** $6,000\n- **Miscellaneous:** $1,500\n\n**Total:** $8,000 + $2,500 + $3,200 + $14,875 + $1,200 + $3,000 + $6,000 + $1,500 = $38,300\n\n**Remaining Budget:** $45,000 - $38,300 = $6,700\n\nThis budget allows for a full-service event with some room for additional expenses or adjustments. If you're aiming for a more economical approach, you could consider reducing the florals and decor cost or opting for DIY decor.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "That sounds like a delightful menu for your wedding reception! Here's a breakdown of how you could allocate your budget for a 3-course meal for 150-175 guests:\n\n**Catering Cost:**\n- For 150 guests: $85 x 150 = $12,750\n- For 175 guests: $85 x 175 = $14,875\n\n**Menu Breakdown:**\n\n1. **Salad:**\n   - You might consider a simple, fresh salad with seasonal ingredients. \n   - The cost could be around $10-$15 per person, so for 150 guests: $10 x 150 = $1,500 to $15 x 150 = $2,250\n   - For 175 guests: $10 x 175 = $1,750 to $15 x 175 = $2,625\n\n2. **Main Course (Choice of Chicken or Salmon):**\n   - The main course could range from $20-$30 per person.\n   - For 150 guests: $20 x 150 = $3,000 to $30 x 150 = $4,500\n   - For 175 guests: $20 x 175 = $3,500 to $30 x 175 = $5,250\n\n3. **Dessert:**\n   - Desserts could range from $5-$10 per person.\n   - For 150 guests: $5 x 150 = $750 to $10 x 150 = $1,500\n   - For 175 guests: $5 x 175 = $875 to $10 x 175 = $1,750\n\n**Example Budget Breakdown for 150 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering (150 guests, $40 per guest):** $6,000\n- **Live Music (String Quartet):** $1,200\n- **Florals and Decor:** $3,000\n- **Attire:** $6,000\n- **Miscellaneous:** $1,500\n- **Salad:** $1,500 to $2,250\n- **Main Course:** $3,000 to $4,500\n- **Dessert:** $750 to $1,500\n\n**Total:** $8,000 + $2,500 + $3,200 + $6,000 + $1,200 + $3,000 + $6,000 + $1,500 + $1,500 to $2,250 + $3,000 to $4,500 + $750 to $1,500 = $36,650 to $41,950\n\n**Remaining Budget:** $45,000 - $36,650 to $41,950 = $3,050 to $7,050\n\n**Example Budget Breakdown for 175 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering (175 guests, $40 per guest):** $7,000\n- **Live Music (String Quartet):** $1,200\n- **Florals and Decor:** $3,000\n- **Attire:** $6,000\n- **Miscellaneous:** $1,500\n- **Salad:** $1,750 to $2,625\n- **Main Course:** $3,500 to $5,250\n- **Dessert:** $875 to $1,750\n\n**Total:** $8,000 + $2,500 + $3,200 + $7,000 + $1,200 + $3,000 + $6,000 + $1,500 + $1,750 to $2,625 + $3,500 to $5,250 + $875 to $1,750 = $38,550 to $43,850\n\n**Remaining Budget:** $45,000 - $38,550 to $43,850 = $1,150 to $6,150\n\nThis budget allows for a full-service event with some room for additional expenses or adjustments. If you're aiming for a more economical approach, you could consider reducing the cost of the main course or dessert.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "That's a wonderful choice for your wedding cake! Here's how you can incorporate the cake cost into your budget:\n\n**Total Budget:** $45,000\n\n**Venue Cost:** $8,000\n\n**DJ Cost:** $2,500\n\n**Photographer Cost:** $3,200\n\n**Catering Cost:**\n- For 150 guests: $85 x 150 = $12,750\n- For 175 guests: $85 x 175 = $14,875\n\n**Wedding Cake:**\n- Cost: $650\n- Serves: 200 guests\n\n**Remaining Budget:**\n- For 150 guests: $45,000 - $8,000 - $2,500 - $3,200 - $12,750 - $650 = $17,850\n- For 175 guests: $45,000 - $8,000 - $2,500 - $3,200 - $14,875 - $650 = $15,750\n\n**Per Guest Cost:**\n- For 150 guests: $17,850 / 150 = $119 per guest\n- For 175 guests: $15,750 / 175 = $90 per guest\n\n**Allocation of Remaining Budget for 150 Guests:**\n\n1. **Additional Costs:**\n   - **Florals and Decor:** $2,000 to $5,000\n   - **Attire (Dresses, Suits, etc.):** $5,000 to $10,000\n   - **Miscellaneous (Licenses, Permits, etc.):** $1,000 to $2,000\n\n**Example Budget Breakdown for 150 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $12,750\n- **Wedding Cake:** $650\n- **Live Music (String Quartet):** $1,200\n- **Florals and Decor:** $3,000\n- **Attire:** $6,000\n- **Miscellaneous:** $1,500\n- **Salad:** $1,500 to $2,250\n- **Main Course:** $3,000 to $4,500\n- **Dessert:** $750 to $1,500\n\n**Total:** $8,000 + $2,500 + $3,200 + $12,750 + $650 + $1,200 + $3,000 + $6,000 + $1,500 + $1,500 to $2,250 + $3,000 to $4,500 + $750 to $1,500 = $37,850 to $42,150\n\n**Remaining Budget:** $45,000 - $37,850 to $42,150 = $2,850 to $7,150\n\n**Allocation of Remaining Budget for 175 Guests:**\n\n1. **Additional Costs:**\n   - **Florals and Decor:** $2,000 to $5,000\n   - **Attire (Dresses, Suits, etc.):** $5,000 to $10,000\n   - **Miscellaneous (Licenses, Permits, etc.):** $1,000 to $2,000\n\n**Example Budget Breakdown for 175 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $14,875\n- **Wedding Cake:** $650\n- **Live Music (String Quartet):** $1,200\n- **Florals and Decor:** $3,000\n- **Attire:** $6,000\n- **Miscellaneous:** $1,500\n- **Salad:** $1,750 to $2,625\n- **Main Course:** $3,500 to $5,250\n- **Dessert:** $875 to $1,750\n\n**Total:** $8,000 + $2,500 + $3,200 + $14,875 + $650 + $1,200 + $3,000 + $6,000 + $1,500 + $1,750 to $2,625 + $3,500 to $5,250 + $875 to $1,750 = $40,650 to $44,950\n\n**Remaining Budget:** $45,000 - $40,650 to $44,950 = $150 to $5,050\n\nThis budget allows for a full-service event with some room for additional expenses or adjustments. If you're aiming for a more economical approach, you could consider reducing the florals and decor cost or opting for DIY decor.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Adding a shuttle bus to your wedding plans is a great idea for convenience and comfort. Here's how you can incorporate this cost into your budget:\n\n**Total Budget:** $45,000\n\n**Venue Cost:** $8,000\n\n**DJ Cost:** $2,500\n\n**Photographer Cost:** $3,200\n\n**Catering Cost:**\n- For 150 guests: $85 x 150 = $12,750\n- For 175 guests: $85 x 175 = $14,875\n\n**Shuttle Bus:**\n- Cost: $800\n\n**Remaining Budget:**\n- For 150 guests: $45,000 - $8,000 - $2,500 - $3,200 - $12,750 - $650 - $800 = $16,700\n- For 175 guests: $45,000 - $8,000 - $2,500 - $3,200 - $14,875 - $650 - $800 = $14,950\n\n**Per Guest Cost:**\n- For 150 guests: $16,700 / 150 = $111.33 per guest\n- For 175 guests: $14,950 / 175 = $85.43 per guest\n\n**Allocation of Remaining Budget for 150 Guests:**\n\n1. **Additional Costs:**\n   - **Florals and Decor:** $2,000 to $5,000\n   - **Attire (Dresses, Suits, etc.):** $5,000 to $10,000\n   - **Miscellaneous (Licenses, Permits, etc.):** $1,000 to $2,000\n\n**Example Budget Breakdown for 150 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $12,750\n- **Wedding Cake:** $650\n- **Live Music (String Quartet):** $1,200\n- **Shuttle Bus:** $800\n- **Florals and Decor:** $3,000\n- **Attire:** $6,000\n- **Miscellaneous:** $1,500\n- **Salad:** $1,500 to $2,250\n- **Main Course:** $3,000 to $4,500\n- **Dessert:** $750 to $1,500\n\n**Total:** $8,000 + $2,500 + $3,200 + $12,750 + $650 + $800 + $3,000 + $6,000 + $1,500 + $1,500 to $2,250 + $3,000 to $4,500 + $750 to $1,500 = $39,850 to $43,150\n\n**Remaining Budget:** $45,000 - $39,850 to $43,150 = $1,850 to $5,150\n\n**Allocation of Remaining Budget for 175 Guests:**\n\n1. **Additional Costs:**\n   - **Florals and Decor:** $2,000 to $5,000\n   - **Attire (Dresses, Suits, etc.):** $5,000 to $10,000\n   - **Miscellaneous (Licenses, Permits, etc.):** $1,000 to $2,000\n\n**Example Budget Breakdown for 175 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $14,875\n- **Wedding Cake:** $650\n- **Live Music (String Quartet):** $1,200\n- **Shuttle Bus:** $800\n- **Florals and Decor:** $3,000\n- **Attire:** $6,000\n- **Miscellaneous:** $1,500\n- **Salad:** $1,750 to $2,625\n- **Main Course:** $3,500 to $5,250\n- **Dessert:** $875 to $1,750\n\n**Total:** $8,000 + $2,500 + $3,200 + $14,875 + $650 + $800 + $3,000 + $6,000 + $1,500 + $1,750 to $2,625 + $3,500 to $5,250 + $875 to $1,750 = $41,650 to $45,950\n\n**Remaining Budget:** $45,000 - $41,650 to $45,950 = $400 to $3,350\n\nThis budget allows for a full-service event with some room for additional expenses or adjustments. If you're aiming for a more economical approach, you could consider reducing the florals and decor cost or opting for DIY decor.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Personalized favors like small succulents are a lovely and unique touch! Here's how you can calculate the cost and incorporate it into your budget:\n\n**Cost of Personalized Favors:**\n- Number of guests: 150\n- Cost per succulent: $4.50\n- Total cost: $4.50 x 150 = $675\n\n**Example Budget Breakdown for 150 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $12,750\n- **Wedding Cake:** $650\n- **Live Music (String Quartet):** $1,200\n- **Shuttle Bus:** $800\n- **Florals and Decor:** $3,000\n- **Attire:** $6,000\n- **Miscellaneous:** $1,500\n- **Salad:** $1,500 to $2,250\n- **Main Course:** $3,000 to $4,500\n- **Dessert:** $750 to $1,500\n- **Personalized Favors (Succulents):** $675\n\n**Total:** $8,000 + $2,500 + $3,200 + $12,750 + $650 + $1,200 + $800 + $3,000 + $6,000 + $1,500 + $1,500 to $2,250 + $3,000 to $4,500 + $750 to $1,500 + $675 = $41,475 to $45,775\n\n**Remaining Budget:** $45,000 - $41,475 to $45,775 = $325 to $7,125\n\n**Example Budget Breakdown for 175 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $14,875\n- **Wedding Cake:** $650\n- **Live Music (String Quartet):** $1,200\n- **Shuttle Bus:** $800\n- **Florals and Decor:** $3,000\n- **Attire:** $6,000\n- **Miscellaneous:** $1,500\n- **Salad:** $1,750 to $2,625\n- **Main Course:** $3,500 to $5,250\n- **Dessert:** $875 to $1,750\n- **Personalized Favors (Succulents):** $787.50\n\n**Total:** $8,000 + $2,500 + $3,200 + $14,875 + $650 + $1,200 + $800 + $3,000 + $6,000 + $1,500 + $1,750 to $2,625 + $3,500 to $5,250 + $875 to $1,750 + $787.50 = $43,787.50 to $48,087.50\n\n**Remaining Budget:** $45,000 - $43,787.50 to $48,087.50 = $(-1,287.50) to $3,087.50\n\nFor 175 guests, it looks like you might be slightly over budget. You might consider reducing the number of favors or looking for a more economical option for favors.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Let's summarize the costs so far and calculate the remaining budget for both 150 and 175 guests.\n\n**Total Budget:** $45,000\n\n### Breakdown for 150 Guests:\n\n1. **Venue:** $8,000\n2. **DJ:** $2,500\n3. **Photographer:** $3,200\n4. **Catering (150 guests, $40 per guest):** $6,000\n5. **Wedding Cake:** $650\n6. **Live Music (String Quartet):** $1,200\n7. **Shuttle Bus:** $800\n8. **Personalized Favors (Succulents):** $675\n9. **Hotel Rooms (40 guests):** $6,000\n\n**Total Costs for 150 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $6,000\n- **Wedding Cake:** $650\n- **Live Music (String Quartet):** $1,200\n- **Shuttle Bus:** $800\n- **Personalized Favors (Succulents):** $675\n- **Hotel Rooms:** $6,000\n\n**Subtotal:** $8,000 + $2,500 + $3,200 + $6,000 + $650 + $1,200 + $800 + $675 + $6,000 = $36,025\n\n**Remaining Budget:** $45,000 - $36,025 = $8,975\n\n### Breakdown for 175 Guests:\n\n1. **Venue:** $8,000\n2. **DJ:** $2,500\n3. **Photographer:** $3,200\n4. **Catering (175 guests, $40 per guest):** $7,000\n5. **Wedding Cake:** $650\n6. **Live Music (String Quartet):** $1,200\n7. **Shuttle Bus:** $800\n8. **Personalized Favors (Succulents):** $787.50\n9. **Hotel Rooms (40 guests):** $6,000\n\n**Total Costs for 175 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $7,000\n- **Wedding Cake:** $650\n- **Live Music (String Quartet):** $1,200\n- **Shuttle Bus:** $800\n- **Personalized Favors (Succulents):** $787.50\n- **Hotel Rooms:** $6,000\n\n**Subtotal:** $8,000 + $2,500 + $3,200 + $7,000 + $650 + $1,200 + $800 + $787.50 + $6,000 = $37,237.50\n\n**Remaining Budget:** $45,000 - $37,237.50 = $7,762.50\n\n### Summary:\n\n- **150 Guests:**\n  - **Total Costs:** $36,025\n  - **Remaining Budget:** $8,975\n\n- **175 Guests:**\n  - **Total Costs:** $37,237.50\n  - **Remaining Budget:** $7,762.50\n\nThis budget allows for a full-service event with some room for additional expenses or adjustments. If you're aiming for a more economical approach, you could consider reducing the florals and decor cost or opting for DIY decor.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Adding the cost of wedding rings to your budget is an important step. Here's how you can incorporate this cost into your budget:\n\n**Total Budget:** $45,000\n\n### Breakdown for 150 Guests:\n\n1. **Venue:** $8,000\n2. **DJ:** $2,500\n3. **Photographer:** $3,200\n4. **Catering (150 guests, $40 per guest):** $6,000\n5. **Wedding Cake:** $650\n6. **Live Music (String Quartet):** $1,200\n7. **Shuttle Bus:** $800\n8. **Personalized Favors (Succulents):** $675\n9. **Hotel Rooms (40 guests):** $6,000\n10. **Rings:** $3,500\n\n**Total Costs for 150 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $6,000\n- **Wedding Cake:** $650\n- **Live Music (String Quartet):** $1,200\n- **Shuttle Bus:** $800\n- **Personalized Favors (Succulents):** $675\n- **Hotel Rooms:** $6,000\n- **Rings:** $3,500\n\n**Subtotal:** $8,000 + $2,500 + $3,200 + $6,000 + $650 + $1,200 + $800 + $675 + $6,000 + $3,500 = $39,525\n\n**Remaining Budget:** $45,000 - $39,525 = $5,475\n\n### Breakdown for 175 Guests:\n\n1. **Venue:** $8,000\n2. **DJ:** $2,500\n3. **Photographer:** $3,200\n4. **Catering (175 guests, $40 per guest):** $7,000\n5. **Wedding Cake:** $650\n6. **Live Music (String Quartet):** $1,200\n7. **Shuttle Bus:** $800\n8. **Personalized Favors (Succulents):** $787.50\n9. **Hotel Rooms (40 guests):** $6,000\n10. **Rings:** $3,500\n\n**Total Costs for 175 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $7,000\n- **Wedding Cake:** $650\n- **Live Music (String Quartet):** $1,200\n- **Shuttle Bus:** $800\n- **Personalized Favors (Succulents):** $787.50\n- **Hotel Rooms:** $6,000\n- **Rings:** $3,500\n\n**Subtotal:** $8,000 + $2,500 + $3,200 + $7,000 + $650 + $1,200 + $800 + $787.50 + $6,000 + $3,500 = $40,637.50\n\n**Remaining Budget:** $45,000 - $40,637.50 = $4,362.50\n\n### Summary:\n\n- **150 Guests:**\n  - **Total Costs:** $39,525\n  - **Remaining Budget:** $5,475\n\n- **175 Guests:**\n  - **Total Costs:** $40,637.50\n  - **Remaining Budget:** $4,362.50\n\nThis budget allows for a full-service event with some room for additional expenses or adjustments. If you're aiming for a more economical approach, you could consider reducing the florals and decor cost or opting for DIY decor.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Certainly! Let's adjust the budget to account for exactly 160 guests.\n\n### Breakdown for 160 Guests:\n\n1. **Venue:** $8,000\n2. **DJ:** $2,500\n3. **Photographer:** $3,200\n4. **Catering (160 guests, $40 per guest):** $6,400\n5. **Wedding Cake:** $650\n6. **Live Music (String Quartet):** $1,200\n7. **Shuttle Bus:** $800\n8. **Personalized Favors (Succulents):** $720\n9. **Hotel Rooms (40 guests):** $6,000\n10. **Rings:** $3,500\n\n**Total Costs for 160 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $6,400\n- **Wedding Cake:** $650\n- **Live Music (String Quartet):** $1,200\n- **Shuttle Bus:** $800\n- **Personalized Favors (Succulents):** $720\n- **Hotel Rooms:** $6,000\n- **Rings:** $3,500\n\n**Subtotal:** $8,000 + $2,500 + $3,200 + $6,400 + $650 + $1,200 + $800 + $720 + $6,000 + $3,500 = $38,970\n\n**Remaining Budget:** $45,000 - $38,970 = $6,030\n\n### Summary:\n\n- **160 Guests:**\n  - **Total Costs:** $38,970\n  - **Remaining Budget:** $6,030\n\nThis budget allows for a full-service event with some room for additional expenses or adjustments. If you're aiming for a more economical approach, you could consider reducing the florals and decor cost or opting for DIY decor.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "No problem! Let's incorporate the cost of floral arrangements into your budget:\n\n**Total Budget:** $45,000\n\n### Breakdown for 160 Guests:\n\n1. **Venue:** $8,000\n2. **DJ:** $2,500\n3. **Photographer:** $3,200\n4. **Catering (160 guests, $40 per guest):** $6,400\n5. **Wedding Cake:** $650\n6. **Live Music (String Quartet):** $1,200\n7. **Shuttle Bus:** $800\n8. **Personalized Favors (Succulents):** $720\n9. **Hotel Rooms (40 guests):** $6,000\n10. **Rings:** $3,500\n11. **Florals (Ceremony and Reception):** $2,800\n\n**Total Costs for 160 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $6,400\n- **Wedding Cake:** $650\n- **Live Music (String Quartet):** $1,200\n- **Shuttle Bus:** $800\n- **Personalized Favors (Succulents):** $720\n- **Hotel Rooms:** $6,000\n- **Rings:** $3,500\n- **Florals:** $2,800\n\n**Subtotal:** $8,000 + $2,500 + $3,200 + $6,400 + $650 + $1,200 + $800 + $720 + $6,000 + $3,500 + $2,800 = $41,770\n\n**Remaining Budget:** $45,000 - $41,770 = $3,230\n\n### Summary:\n\n- **160 Guests:**\n  - **Total Costs:** $41,770\n  - **Remaining Budget:** $3,230\n\nThis budget allows for a full-service event with some room for additional expenses or adjustments. If you're aiming for a more economical approach, you could consider reducing the florals and decor cost or opting for DIY decor.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "No worries, Sarah! It's great that you're planning such a memorable day for you and Miguel. If you need any more help with details or have any questions about your wedding planning, feel free to ask. I'm here to assist you in any way I can.",
+      "That's understandable! Sometimes it's best to keep things simple and elegant. Here are some other creative entrance ideas that might fit your style:\n\n1. **Horse-Drawn Carriage:** A classic and romantic way to make an entrance.\n2. **Classic Car:** Renting a vintage or classic car can add a touch of sophistication.\n3. **Bicycles:** If you both enjoy cycling, consider arriving on bicycles for a fun and unique entrance.\n4. **Walking:** Arrive on foot through a beautifully decorated path or garden.\n5. **Boat:** If your venue is near a body of water, a boat arrival can be very picturesque.\n6. **Scenic Train:** If there's a scenic train route near your venue, this could be a memorable way to arrive.\n7. **Aerial Drone:** Consider a drone entrance for a modern and visually stunning approach.\n\nFeel free to choose an entrance that feels right for you and Miguel. If you need more ideas or help with any part of your planning, don't hesitate to ask!",
+      "Weather can certainly add an element of unpredictability to outdoor weddings, but Portland has plenty of beautiful indoor venues that can accommodate any weather. Here are some tips to ensure your day is perfect no matter what:\n\n**Venue Options:**\n\n1. **Riverside Gardens:** Offers both indoor and outdoor spaces, so you can easily move indoors if needed.\n2. **Seaside Pavilion:** Has a full indoor space with stunning views.\n3. **The Nines Hotel:** Provides elegant indoor spaces with beautiful natural light.\n4. **The Nines, a Luxury Collection Hotel:** Another option with indoor and outdoor spaces.\n\n**Weather Considerations:**\n\n1. **Backup Plan:** Have a backup plan for outdoor events, such as a tent or canopy.\n2. **Timing:** Plan your outdoor activities for the sunniest parts of the day.\n3. **Seating:** Ensure there's ample indoor seating for guests.\n4. **Decorations:** Use weather-resistant decorations and materials.\n5. **Transportation:** Ensure guests have transportation options in case of rain.\n\n**Indoor Decor:**\n\n1. **Natural Light:** Maximize natural light to brighten up indoor spaces.\n2. **Plants:** Incorporate lush indoor plants to bring a touch of nature.\n3. **Candles:** Use candles for a warm and cozy atmosphere.\n4. **Lighting:** Consider soft, ambient lighting to create a beautiful ambiance.\n\n**Entertainment:**\n\n1. **Live Music:** Have live music ready for both indoor and outdoor settings.\n2. **DJ:** A DJ can easily adapt to changing environments.\n3. **Photo Booth:** Set up an indoor photo booth with props and backdrops.\n\n**Food and Drinks:**\n\n1. **Buffet:** A buffet can be easily moved indoors.\n2. **Catering:** Work with a catering service that offers both indoor and outdoor setups.\n3. **Signature Cocktails:** Have signature cocktails ready for guests.\n\nIf you need more specific ideas or help with any part of your planning, feel free to ask!",
+      "You finally chose Riverside Gardens as your wedding venue. It's a beautiful choice with its garden setting and charming atmosphere. If you need any further assistance with planning or have specific questions, feel free to ask!",
+      "Your wedding is planned for June 15th, 2025. If you need any assistance with planning or have any specific questions or preferences, feel free to share them. I'm here to help!",
+      "Your total budget for the wedding is $45,000. If you need any help with budget allocation or have specific questions about how to spend this budget, feel free to share more details. I'm here to assist you in making the most of your budget!",
+      "Your photographer is Elena Rodriguez, and you paid her $3,200. If you need any more help with budgeting or have specific questions about your wedding planning, feel free to ask. I'm here to assist you!",
+      "Your wedding colors are sunflowers and light blue. This summer theme will add a beautiful and vibrant touch to your special day. If you need more ideas or help with any part of your planning, feel free to ask!",
+      "After finalizing your guest list, you're expecting exactly 160 guests. Here's a breakdown of your budget with 160 guests:\n\n**Total Budget:** $45,000\n\n### Breakdown for 160 Guests:\n\n1. **Venue:** $8,000\n2. **DJ:** $2,500\n3. **Photographer:** $3,200\n4. **Catering (160 guests, $40 per guest):** $6,400\n5. **Wedding Cake:** $650\n6. **Live Music (String Quartet):** $1,200\n7. **Shuttle Bus:** $800\n8. **Personalized Favors (Succulents):** $720\n9. **Hotel Rooms (40 guests):** $6,000\n10. **Rings:** $3,500\n11. **Florals (Ceremony and Reception):** $2,800\n\n**Total Costs for 160 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $6,400\n- **Wedding Cake:** $650\n- **Live Music:** $1,200\n- **Shuttle Bus:** $800\n- **Personalized Favors:** $720\n- **Hotel Rooms:** $6,000\n- **Rings:** $3,500\n- **Florals:** $2,800\n\n**Subtotal:** $41,770\n\n**Remaining Budget:** $45,000 - $41,770 = $3,230\n\n### Summary:\n\n- **160 Guests:**\n  - **Total Costs:** $41,770\n  - **Remaining Budget:** $3,230\n\nThis budget allows for a full-service event with some room for additional expenses or adjustments. If you're aiming for a more economical approach, you could consider reducing the florals and decor cost or opting for DIY decor.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Your ceremony is planned to start at 4 PM. Here are some suggestions to help everything run smoothly:\n\n**Ceremony (4 PM):**\n\n1. **Preparation:**\n   - Ensure all participants are ready and dressed in their attire by 3:30 PM.\n   - Have a designated person or team to assist with any last-minute adjustments.\n\n2. **Timing:**\n   - Aim to start the ceremony exactly at 4 PM.\n   - Keep a schedule to ensure each part of the ceremony (processional, readings, vows, etc.) stays on track.\n\n3. **Photography:**\n   - Have your photographer ready to capture key moments before, during, and after the ceremony.\n\n4. **Guest Experience:**\n   - Provide programs or seating charts to help guests know where to go.\n   - Consider a small welcome gift or program with a summer theme.\n\n**Transition (4 PM - 6 PM):**\n\n1. **Post-Ceremony Photos:**\n   - Take photos of the bridal party and family after the ceremony.\n   - Ensure the photographer has a plan to move indoors if needed.\n\n2. **Refreshments:**\n   - Offer light refreshments or drinks to guests as they wait for the reception to start.\n\n3. **Reception Setup:**\n   - Ensure the reception venue is ready and set up by 5:30 PM.\n\n**Reception (6 PM):**\n\n1. **Welcome Guests:**\n   - Greet guests as they arrive for the reception.\n   - Have a designated person to help guests find their seats.\n\n2. **First Dance:**\n   - Plan your first dance to start the reception on a high note.\n\n3. **Dinner and Toasts:**\n   - Serve dinner in a timely manner to keep the energy high.\n   - Schedule time for toasts and speeches.\n\n4. **Entertainment:**\n   - Have live music or a DJ ready to keep the party going.\n\nIf you need more specific advice or help with any part of your planning, feel free to ask!",
+      "Your maid of honor is your sister Jessica, and your best man is your brother-in-law David. Here are some ideas to make their roles memorable:\n\n**Maid of Honor (Jessica):**\n\n1. **Personalized Speech:**\n   - Encourage Jessica to prepare a heartfelt speech for the reception, sharing her favorite memories with you and how you've grown together.\n\n2. **Special Outfit:**\n   - Coordinate with Jessica to find a beautiful outfit that matches your wedding theme. Consider a custom-made dress or a special accessory.\n\n3. **Memory Book:**\n   - Create a memory book for Jessica, filled with photos and notes from friends and family about their favorite moments with you.\n\n4. **Shared Activities:**\n   - Plan some joint activities leading up to the wedding, such as organizing a bridal shower or a bachelorette party.\n\n**Best Man (David):**\n\n1. **Personalized Speech:**\n   - Encourage David to prepare a heartfelt speech for the reception, sharing his favorite memories with Michael and how he's been a supportive brother-in-law.\n\n2. **Special Outfit:**\n   - Coordinate with David to find a sharp suit that matches your wedding theme. Consider custom accessories like a pocket square or tie.\n\n3. **Memory Book:**\n   - Create a memory book for David, filled with photos and notes from friends and family about their favorite moments with Michael.\n\n4. **Shared Activities:**\n   - Plan some joint activities leading up to the wedding, such as organizing a bachelor party or helping with last-minute preparations.\n\nIf you need more ideas or help with any part of your planning, feel free to ask!",
+      "To calculate the total cost of favors for your confirmed guests, you can multiply the number of guests by the cost per favor.\n\n### Breakdown for 160 Guests:\n\n1. **Number of Guests:** 160\n2. **Cost per Favor:** $4.50\n\n**Total Cost of Favors:** $4.50 x 160 = $720\n\nHere's how this fits into your budget:\n\n**Total Budget:** $45,000\n\n**Breakdown for 160 Guests:**\n\n- **Venue:** $8,000\n- **DJ:** $2,500\n- **Photographer:** $3,200\n- **Catering:** $6,400\n- **Wedding Cake:** $650\n- **Live Music (String Quartet):** $1,200\n- **Shuttle Bus:** $800\n- **Personalized Favors (Succulents):** $720\n- **Hotel Rooms:** $6,000\n- **Rings:** $3,500\n- **Florals:** $2,800\n\n**Total Costs:** $8,000 + $2,500 + $3,200 + $6,400 + $650 + $1,200 + $800 + $720 + $6,000 + $3,500 + $2,800 = $38,970\n\n**Remaining Budget:** $45,000 - $38,970 = $6,030\n\nThis leaves you with $6,030 to allocate for additional expenses such as decor, attire, miscellaneous costs, and any other items you might need.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Your fiancé's actual name is Miguel Torres. If you need any more help with details or have any questions about your wedding planning, feel free to ask. I'm here to assist you in any way I can.",
+      "It sounds like you're excited about your coffee! Regarding the balloon entrance, you mentioned earlier that it was too dramatic and you decided not to do it. Here are some alternative, less dramatic entrance ideas:\n\n1. **Horse-Drawn Carriage:** A classic and romantic way to arrive.\n2. **Classic Car:** Renting a vintage or classic car can be very elegant.\n3. **Walking:** If your venue is nearby, consider walking in together.\n4. **Bicycles:** If you both enjoy cycling, this could be a fun and unique entrance.\n5. **Boat:** If your venue is near a body of water, a boat arrival can be very picturesque.\n6. **Scenic Train:** If there's a scenic train route, this can be a memorable arrival.\n7. **Walking Through the Venue:** Arrive by walking through the venue with a small procession.\n\nFeel free to choose an entrance that fits your style and makes your day special. If you need more ideas or help with any part of your planning, don't hesitate to ask!",
+      "You're planning to order one wedding cake from Sweet Dreams, which serves 200 guests. If you need any more help with planning or have specific questions about your cake, feel free to ask!",
+      "To determine how many servings of salmon and chicken you need, you can calculate based on the number of guests.\n\n### Calculation for 150 Guests:\n\n1. **Salmon:**\n   - 30% of 150 guests = 0.30 x 150 = 45 guests\n   - If each serving is for one guest, you need 45 servings of salmon.\n\n2. **Chicken:**\n   - 70% of 150 guests = 0.70 x 150 = 105 guests\n   - If each serving is for one guest, you need 105 servings of chicken.\n\n### Calculation for 175 Guests:\n\n1. **Salmon:**\n   - 30% of 175 guests = 0.30 x 175 = 52.5 guests\n   - Since you can't have half a guest, round up to 53 servings of salmon.\n\n2. **Chicken:**\n   - 70% of 175 guests = 0.70 x 175 = 122.5 guests\n   - Round up to 123 servings of chicken.\n\n### Summary:\n\n- **For 150 Guests:**\n  - **Salmon:** 45 servings\n  - **Chicken:** 105 servings\n\n- **For 175 Guests:**\n  - **Salmon:** 53 servings\n  - **Chicken:** 123 servings\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "To calculate the percentage of your budget spent so far with the updated guest count, we can use the total costs we've summarized earlier.\n\n### Breakdown for 160 Guests:\n\n- **Total Costs:** $41,770\n- **Total Budget:** $45,000\n\n**Percentage Spent:** (Total Costs / Total Budget) x 100\n\n\\[ \\text{Percentage Spent} = \\left( \\frac{41,770}{45,000} \\right) \\times 100 \\approx 92.82\\% \\]\n\n### Summary:\n\n- **160 Guests:**\n  - **Total Costs:** $41,770\n  - **Remaining Budget:** $3,230\n  - **Percentage Spent:** 92.82%\n\nThis leaves you with approximately 7.18% of your budget remaining.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Let's check if you can afford a photo booth for $900 within your budget:\n\n### Breakdown for 160 Guests:\n\n- **Total Costs:** $41,770\n- **Remaining Budget:** $3,230\n\n**Cost of Photo Booth:** $900\n\n**New Remaining Budget:** $3,230 - $900 = $2,330\n\n### Summary:\n\n- **160 Guests:**\n  - **Total Costs:** $41,770 + $900 = $42,670\n  - **Remaining Budget:** $2,330\n\nWith the addition of the photo booth, you have $2,330 remaining in your budget, which means you can afford it.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "To calculate the combined cost of your top 3 vendors (DJ, photographer, and catering), you can add their individual costs together.\n\n### For 150 Guests:\n\n1. **DJ Cost:** $2,500\n2. **Photographer Cost:** $3,200\n3. **Catering Cost:** $12,750 (at $85 per person)\n\n**Combined Cost:** $2,500 + $3,200 + $12,750 = $18,450\n\n### For 175 Guests:\n\n1. **DJ Cost:** $2,500\n2. **Photographer Cost:** $3,200\n3. **Catering Cost:** $14,875 (at $85 per person)\n\n**Combined Cost:** $2,500 + $3,200 + $14,875 = $20,575\n\n### Summary:\n\n- **For 150 Guests:**\n  - **Combined Cost:** $18,450\n\n- **For 175 Guests:**\n  - **Combined Cost:** $20,575\n\nThis leaves you with the remaining budget for each guest count:\n\n- **For 150 Guests:**\n  - **Remaining Budget:** $45,000 - $18,450 = $26,550\n\n- **For 175 Guests:**\n  - **Remaining Budget:** $45,000 - $20,575 = $24,425\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "To determine the departure time for the shuttle, you can subtract 30 minutes from the arrival time at the venue.\n\n**Arrival Time at the Venue:** 3:30 PM\n\n**Departure Time from Hotel:** 3:30 PM - 0:30 = 3:00 PM\n\nSo, the shuttle should leave the hotel at 3:00 PM to arrive 30 minutes before the ceremony starts at 4:00 PM.\n\nIf you need any more help with planning or have specific questions, feel free to ask!",
+      "To calculate the number of children under 12, you can determine 25% of the total number of guests.\n\n**Calculation:**\n- Total guests: 160\n- Percentage of children: 25%\n- Number of children: 0.25 x 160 = 40\n\nSo, out of 160 guests, 40 are children under 12.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "To calculate the savings from reducing hotel bookings, you can subtract the cost of the reduced number of rooms from the original cost.\n\n**Original Cost for 40 Rooms:**\n- Number of rooms: 40\n- Average cost per night: $150\n- Total cost: 40 rooms x $150/night = $6,000\n\n**Reduced Cost for 30 Rooms:**\n- Number of rooms: 30\n- Average cost per night: $150\n- Total cost: 30 rooms x $150/night = $4,500\n\n**Savings:**\n- Savings = Original Cost - Reduced Cost\n- Savings = $6,000 - $4,500 = $1,500\n\nSo, by reducing hotel bookings from 40 rooms to 30 rooms, you would save $1,500.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "If the DJ set starts at 6 PM and lasts for 4 hours, it would end at:\n\n**Start Time:** 6:00 PM\n**Duration:** 4 hours\n\n**End Time:** 6:00 PM + 4 hours = 10:00 PM\n\nSo, the DJ set would end at 10:00 PM.\n\nIf you need any more help with planning or have specific questions, feel free to ask!",
+      "To calculate the total cost of all music (string quartet and DJ), you can add their individual costs together.\n\n### For 150 Guests:\n\n1. **String Quartet Cost:** $1,200\n2. **DJ Cost:** $2,500\n\n**Total Music Cost:** $1,200 + $2,500 = $3,700\n\n### For 175 Guests:\n\n1. **String Quartet Cost:** $1,200\n2. **DJ Cost:** $2,500\n\n**Total Music Cost:** $1,200 + $2,500 = $3,700\n\n### Summary:\n\n- **For 150 Guests:**\n  - **Total Music Cost:** $3,700\n\n- **For 175 Guests:**\n  - **Total Music Cost:** $3,700\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "If dinner starts at 6 PM and lasts for 2 hours, it would end at:\n\n**Start Time:** 6:00 PM\n**Duration:** 2 hours\n\n**End Time:** 6:00 PM + 2 hours = 8:00 PM\n\nSo, dancing would begin at 8:00 PM, right after dinner.\n\nIf you need any more help with planning or have specific questions, feel free to ask!",
+      "To calculate the per-guest cost, you can divide the total budget by the number of confirmed guests.\n\n### For 150 Guests:\n\n- **Total Budget:** $45,000\n- **Number of Guests:** 150\n\n**Per Guest Cost:** $45,000 / 150 = $300\n\n### For 175 Guests:\n\n- **Total Budget:** $45,000\n- **Number of Guests:** 175\n\n**Per Guest Cost:** $45,000 / 175 = $257.14\n\n### Summary:\n\n- **For 150 Guests:** $300 per guest\n- **For 175 Guests:** $257.14 per guest\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "To determine how many out-of-town guests you have, you can divide the total number of hotel rooms by the number of guests per room.\n\n**Calculation:**\n\n- Total number of hotel rooms: 40\n- Number of guests per room: 2\n\n**Number of Out-of-Town Guests:** 40 rooms x 2 guests/room = 80 guests\n\nSo, you have 80 out-of-town guests.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "To calculate the difference in catering cost between your original 150 guest count and the final 160 guest count, you can subtract the original catering cost from the final catering cost.\n\n**Original Catering Cost (for 150 guests):**\n- Cost per guest: $85\n- Total cost: $85 x 150 = $12,750\n\n**Final Catering Cost (for 160 guests):**\n- Cost per guest: $85\n- Total cost: $85 x 160 = $13,600\n\n**Difference in Cost:**\n- Difference = Final Catering Cost - Original Catering Cost\n- Difference = $13,600 - $12,750 = $850\n\nSo, the difference in catering cost between your original 150 guest count and the final 160 guest count is $850.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Your cousin Amy is coordinating the string quartet for the ceremony. If you need any more help with planning or have specific questions, feel free to ask!",
+      "Your photographer is Elena Rodriguez. If you need any more help with details or have any questions about your wedding planning, feel free to ask. I'm here to assist you in any way I can.",
+      "Here are your vendors listed in order from most to least expensive:\n\n1. **Catering (Bella's Kitchen):**\n   - For 150 guests: $12,750\n   - For 175 guests: $14,875\n\n2. **Photographer (Elena Rodriguez):**\n   - Cost: $3,200\n\n3. **DJ (Marcus):**\n   - Cost: $2,500\n\n4. **Venue (Riverside Gardens):**\n   - Cost: $8,000\n\n5. **Live Music (String Quartet):**\n   - Cost: $1,200\n\n6. **Wedding Cake (Sweet Dreams):**\n   - Cost: $650\n\n7. **Shuttle Bus:**\n   - Cost: $800\n\n8. **Personalized Favors (Succulents):**\n   - Cost: $720\n\n9. **Hotel Rooms (for 40 guests):**\n   - Cost: $6,000\n\n10. **Rings:**\n    - Cost: $3,500\n\n11. **Florals (Ceremony and Reception):**\n    - Cost: $2,800\n\nIf you need any more help with planning or have specific questions, feel free to ask!",
+      "Here are the three biggest expenses so far, based on the breakdown we've calculated:\n\n### For 150 Guests:\n\n1. **Catering (150 guests, $40 per guest):**\n   - Cost: $6,000\n\n2. **Venue (Riverside Gardens):**\n   - Cost: $8,000\n\n3. **DJ (Marcus):**\n   - Cost: $2,500\n\n### For 175 Guests:\n\n1. **Catering (175 guests, $40 per guest):**\n   - Cost: $7,000\n\n2. **Venue (Riverside Gardens):**\n   - Cost: $8,000\n\n3. **DJ (Marcus):**\n   - Cost: $2,500\n\n### Summary:\n\n- **For 150 Guests:**\n  - **Top 3 Expenses:**\n    1. Catering: $6,000\n    2. Venue: $8,000\n    3. DJ: $2,500\n\n- **For 175 Guests:**\n  - **Top 3 Expenses:**\n    1. Catering: $7,000\n    2. Venue: $8,000\n    3. DJ: $2,500\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "You almost chose Seaside Pavilion as your wedding venue but decided against it because it was too expensive. Instead, you finalized on Riverside Gardens, which offers a more budget-friendly option with its elegant indoor and outdoor spaces.\n\nIf you need any more help with planning or have specific questions, feel free to ask!",
+      "You decided against Seaside Pavilion because it was too expensive. Riverside Gardens offered a more budget-friendly option with its beautiful garden setting and charming atmosphere. It's a great choice that fits well within your budget.\n\nIf you need any further assistance with planning or have specific questions, feel free to ask!",
+      "To cut $5,000 from your budget, you could consider dropping or reducing the cost of the following vendors:\n\n### Dropping a Vendor:\n\n1. **Catering:** \n   - Dropping catering would save the most. However, this might not be feasible if you need to serve a meal.\n\n2. **Shuttle Bus:**\n   - If you don't need the shuttle bus, you could drop this entirely, saving $800.\n\n### Reducing the Cost of a Vendor:\n\n1. **Photographer:** \n   - You could negotiate with Elena Rodriguez to reduce her fee by $1,000, saving $1,000.\n\n2. **DJ:** \n   - You could negotiate with Marcus to reduce his fee by $1,000, saving $1,000.\n\n3. **Wedding Cake:** \n   - You could opt for a less expensive cake or DIY some of the cake decorations, potentially saving $500 to $1,000.\n\n4. **Florals (Ceremony and Reception):**\n   - You could negotiate with the florist to reduce the cost by $1,000, saving $1,000.\n\n### Combination of Two Vendors:\n\n1. **Dropping Shuttle Bus and Reducing Photographer:** \n   - Save $800 + $1,000 = $1,800\n\n2. **Dropping Shuttle Bus and Reducing DJ:** \n   - Save $800 + $1,000 = $1,800\n\n3. **Dropping Shuttle Bus and Reducing Florals:** \n   - Save $800 + $1,000 = $1,800\n\n4. **Reducing Photographer and DJ:** \n   - Save $1,000 + $1,000 = $2,000\n\n5. **Reducing Photographer and Wedding Cake:** \n   - Save $1,000 + $500 to $1,000 = $1,500 to $2,000\n\n6. **Reducing DJ and Wedding Cake:** \n   - Save $1,000 + $500 to $1,000 = $1,500 to $2,000\n\n7. **Reducing Photographer and Florals:** \n   - Save $1,000 + $500 to $1,000 = $1,500 to $2,000\n\n8. **Reducing DJ and Florals:** \n   - Save $1,000 + $500 to $1,000 = $1,500 to $2,000\n\n9. **Reducing Catering and Florals:** \n   - Save $1,000 to $2,000 + $500 to $1,000 = $1,500 to $3,000\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "To calculate the total spending on guest accommodations (hotel + shuttle), you can add the cost of the hotel rooms and the shuttle bus together.\n\n**Hotel Rooms:**\n- Number of rooms: 40\n- Average cost per night: $150\n- Total cost: 40 rooms x $150/night = $6,000\n\n**Shuttle Bus:**\n- Cost: $800\n\n**Total Spending on Guest Accommodations:**\n- Total cost = Hotel Rooms + Shuttle Bus\n- Total cost = $6,000 + $800 = $6,800\n\nSo, the total spending on guest accommodations (hotel + shuttle) is $6,800.\n\nIf you need any more help with budgeting or have specific questions, feel free to ask!",
+      "Here's the cost breakdown for food, including catering per person, total catering, and the wedding cake:\n\n### Catering Cost:\n\n1. **Per Person:** $40\n2. **Total Cost for 150 Guests:** $40 x 150 = $6,000\n3. **Total Cost for 175 Guests:** $40 x 175 = $7,000\n\n### Wedding Cake:\n\n1. **Cost:** $650\n2. **Serves:** 200 guests\n\n### Summary:\n\n- **For 150 Guests:**\n  - **Catering:** $6,000\n  - **Wedding Cake:** $650\n  - **Total Food Cost:** $6,000 + $650 = $6,650\n\n- **For 175 Guests:**\n  - **Catering:** $7,000\n  - **Wedding Cake:** $650\n  - **Total Food Cost:** $7,000 + $650 = $7,650\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Here's a suggested timeline for your wedding day from 2 PM to 11 PM:\n\n**2:00 PM - 3:30 PM: Guest Arrival and Welcome**\n\n- Guests begin to arrive and are welcomed by a designated greeter.\n- Provide programs or seating charts to help guests find their seats.\n\n**3:30 PM - 4:00 PM: Pre-Ceremony Photos**\n\n- Capture family photos and portraits before the ceremony.\n\n**4:00 PM - 5:00 PM: Ceremony**\n\n- Processional: Guests are seated, and the bridal party walks down the aisle.\n- Ceremony: Officiant leads the ceremony, vows are exchanged, and rings are placed.\n- Recessional: The newlyweds walk out as guests applaud.\n\n**5:00 PM - 5:30 PM: Post-Ceremony Photos**\n\n- Take photos of the bridal party, family, and the newlyweds.\n\n**5:30 PM - 6:00 PM: Reception Setup**\n\n- Ensure the reception venue is set up and ready for guests.\n\n**6:00 PM - 6:30 PM: Cocktail Hour**\n\n- Serve light refreshments and cocktails.\n- Guests mingle and enjoy the ambiance.\n\n**6:30 PM - 7:00 PM: Dinner Service**\n\n- Serve a 3-course meal (salad, main course, dessert).\n- Offer a choice of chicken or salmon for the main course.\n\n**7:00 PM - 7:30 PM: First Dance**\n\n- The newlyweds take the dance floor for their first dance as a married couple.\n\n**7:30 PM - 8:00 PM: Toasts and Speeches**\n\n- Family and friends give toasts and speeches to honor the couple.\n\n**8:00 PM - 9:00 PM: Dinner and Dessert**\n\n- Continue with dinner service.\n- Serve desserts and offer a choice of coffee or tea.\n\n**9:00 PM - 10:00 PM: Dancing and Entertainment**\n\n- DJ or live band starts playing music.\n- Guests dance and enjoy the entertainment.\n\n**10:00 PM - 10:30 PM: Cake Cutting**\n\n- The newlyweds cut the wedding cake and share it with guests.\n\n**10:30 PM - 11:00 PM: Closing Remarks and Farewell**\n\n- The couple makes closing remarks.\n- Guests are thanked for attending and are given party favors.\n\n**11:00 PM: End of Reception**\n\n- The reception ends, and guests depart.\n\nFeel free to adjust this timeline to better fit your preferences and schedule. If you need more specific details or have any other questions, don't hesitate to ask!",
+      "You have an indoor backup at Riverside Gardens. It's a beautiful choice with its elegant indoor spaces and garden setting.\n\nIf you need any further assistance with planning or have specific questions, feel free to ask!",
+      "If all 160 guests attend, the total headcount including the couple would be:\n\n\\[ 160 \\, \\text{guests} + 2 \\, \\text{(the couple)} = 162 \\, \\text{people} \\]\n\nSo, the total headcount for your wedding day would be 162 people. If you need further assistance with planning or have any specific questions, feel free to ask!",
+      "Based on your decision, you are not hiring a videographer for your wedding. If you need any further assistance with planning or have specific questions, feel free to ask!",
+      "To determine how many extra servings your cake provides, you can subtract the number of guests from the number of servings the cake provides.\n\n**Calculation:**\n- Cake serves: 200\n- Number of guests: 160\n\n**Extra Servings:** 200 - 160 = 40\n\nSo, your cake provides 40 extra servings beyond the number of guests you have.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Your event planner is John. He will handle vendor coordination for your wedding. If you need any more help with planning or have specific questions, feel free to ask. I'm here to assist you!",
+      "To calculate the total hotel cost for 40 guests at $150 per night for 2 nights, you can multiply the number of guests by the number of nights and the nightly rate.\n\n**Calculation:**\n- Number of guests: 40\n- Number of nights: 2\n- Nightly rate: $150\n\n**Total Hotel Cost:** 40 guests x 2 nights x $150/night = $12,000\n\nSo, the total hotel cost for 40 guests at $150 per night for 2 nights is $12,000.\n\nIf you need any more help with budgeting or have specific questions, feel free to ask!",
+      "To calculate the cost per guest for just the venue, you can divide the total venue cost by the number of guests.\n\n**Calculation:**\n- Total venue cost: $8,000\n- Number of guests: 160\n\n**Cost per Guest:** $8,000 / 160 guests = $50 per guest\n\nSo, the cost per guest for just the venue is $50.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "To calculate the new total spending with the addition of a premium bar package for $1,500, you can add this cost to the previous total costs.\n\n### For 150 Guests:\n\n**Previous Total Costs:** $41,770\n\n**New Total Costs with Bar Package:**\n- **Total Costs:** $41,770 + $1,500 = $43,270\n\n### For 175 Guests:\n\n**Previous Total Costs:** $43,787.50\n\n**New Total Costs with Bar Package:**\n- **Total Costs:** $43,787.50 + $1,500 = $45,287.50\n\n### Summary:\n\n- **For 150 Guests:**\n  - **Total Costs with Bar Package:** $43,270\n  - **Remaining Budget:** $45,000 - $43,270 = $1,730\n\n- **For 175 Guests:**\n  - **Total Costs with Bar Package:** $45,287.50\n  - **Remaining Budget:** $45,000 - $45,287.50 = $(-287.50)\n\nFor 150 guests, you can afford the premium bar package, but for 175 guests, you would be slightly over budget.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "To determine the number of guests from each side, you can divide the total number of guests by the number of guests from the bride's side.\n\n**Calculation:**\n- Total guests: 160\n- Guests from the bride's side: 80\n\n**Guests from the groom's side:** 160 - 80 = 80\n\nSo, there are 80 guests from the bride's side and 80 guests from the groom's side.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "You decided to book a shuttle bus instead of renting luxury cars. Here's the breakdown:\n\n**Shuttle Bus:** \n- Cost: $800\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Here's a summary of the key details for your wedding:\n\n- **Bride's Name:** Sarah Chen\n- **Groom's Name:** Miguel Torres\n- **Wedding Date:** June 15th, 2025\n- **Venue:** Riverside Gardens\n- **Guest Count:** 160\n\nIf you need any more help with planning or have specific questions, feel free to ask!",
+      "Here are the roles and the individuals assigned to them:\n\n- **Maid of Honor:** Your sister Jessica\n- **Best Man:** Your brother-in-law David\n- **Coordinator:** Your cousin Amy (for the string quartet)\n- **Event Planner:** John\n\nIf you need any more help with planning or have specific questions, feel free to ask!",
+      "Let's calculate the total music costs and total food costs.\n\n### Total Music Costs:\n\n1. **String Quartet Cost:** $1,200\n2. **DJ Cost:** $2,500\n\n**Combined Music Cost:** $1,200 + $2,500 = $3,700\n\n### Total Food Costs:\n\n1. **Catering Cost:**\n   - For 150 guests: $40 x 150 = $6,000\n   - For 175 guests: $40 x 175 = $7,000\n\n2. **Wedding Cake Cost:** $650\n\n**Combined Food Cost:**\n- For 150 guests: $6,000 + $650 = $6,650\n- For 175 guests: $7,000 + $650 = $7,650\n\n### Summary:\n\n- **Total Music Costs:** $3,700\n- **Total Food Costs:**\n  - For 150 guests: $6,650\n  - For 175 guests: $7,650\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "To determine the setup time, you can subtract 6 hours from the ceremony start time.\n\n**Ceremony Start Time:** 4:00 PM\n\n**Setup Time:** 4:00 PM - 6 hours = 10:00 AM\n\nSo, the setup should start at 10:00 AM to ensure everything is ready by 4:00 PM.\n\nIf you need any more help with planning or have specific questions, feel free to ask!",
+      "Here's the breakdown of your current total spending and remaining budget:\n\n### For 150 Guests:\n\n- **Total Costs:** $41,770\n- **Remaining Budget:** $3,230\n\n### For 175 Guests:\n\n- **Total Costs:** $43,787.50\n- **Remaining Budget:** $1,212.50\n\n### Summary:\n\n- **For 150 Guests:**\n  - **Total Costs:** $41,770\n  - **Remaining Budget:** $3,230\n\n- **For 175 Guests:**\n  - **Total Costs:** $43,787.50\n  - **Remaining Budget:** $1,212.50\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Here's a list of ideas you considered but rejected for your wedding:\n\n**Venues:**\n- **Seaside Pavilion:** Rejected because it was too expensive.\n\n**Extras:**\n- **Hot-Air Balloon Entrance:** Rejected as too dramatic.\n- **Luxury Car Rentals:** Rejected in favor of a shuttle bus.\n- **Premium Bar Package:** Considered but not included due to budget constraints.\n\n**Services:**\n- **Videography:** Considered but decided against hiring a videographer.\n- **Personalized Favors (Different Option):** Considered but decided on small succulents instead.\n\nIf you need any more help with planning or have specific questions, feel free to ask!",
+      "To calculate the total gift cost, you can add the cost of favors for all guests and the cost of welcome bags for out-of-town guests.\n\n**Favors for All Guests:**\n- Number of guests: 160\n- Cost per favor: $4.50\n- Total cost for favors: $4.50 x 160 = $720\n\n**Welcome Bags for Out-of-Town Guests:**\n- Number of out-of-town guests: 40 (assuming 40 guests need hotels)\n- Cost per welcome bag: $12\n- Total cost for welcome bags: $12 x 40 = $480\n\n**Total Gift Cost:**\n- Total cost for favors + Total cost for welcome bags\n- Total cost: $720 + $480 = $1,200\n\nSo, the total gift cost for favors and welcome bags would be $1,200.\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Here's the complete vendor list with names:\n\n1. **DJ:** Marcus\n2. **Photographer:** Elena Rodriguez\n3. **Caterer:** Bella's Kitchen\n4. **Florist:** Not specified (recommended by Elena)\n5. **String Quartet Coordinator:** Amy (your cousin)\n\nIf you need further assistance with planning or have specific questions about any of these vendors, feel free to ask!",
+      "To calculate the percentage of your budget used, you can divide the total costs by the total budget and multiply by 100.\n\n### For 150 Guests:\n\n- **Total Costs:** $41,770\n- **Total Budget:** $45,000\n\n**Percentage Used:** (Total Costs / Total Budget) x 100\n\n\\[ \\text{Percentage Used} = \\left( \\frac{41,770}{45,000} \\right) \\times 100 \\approx 92.82\\% \\]\n\n### For 175 Guests:\n\n- **Total Costs:** $43,787.50\n- **Total Budget:** $45,000\n\n**Percentage Used:** (Total Costs / Total Budget) x 100\n\n\\[ \\text{Percentage Used} = \\left( \\frac{43,787.50}{45,000} \\right) \\times 100 \\approx 97.31\\% \\]\n\n### Summary:\n\n- **For 150 Guests:**\n  - **Percentage Used:** 92.82%\n  - **Remaining Budget:** $3,230\n\n- **For 175 Guests:**\n  - **Percentage Used:** 97.31%\n  - **Remaining Budget:** $1,212.50\n\nIf you need further assistance with planning or have specific questions, feel free to ask!",
+      "Your groom's actual full name is Miguel Torres. If you need any more help with details or have any questions about your wedding planning, feel free to ask. I'm here to assist you in any way I can."
+    ]
+  }
+}

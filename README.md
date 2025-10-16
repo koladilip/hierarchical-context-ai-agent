@@ -1246,16 +1246,9 @@ return results.sort((a, b) => b.score - a.score).slice(0, topK);
 
 ## 📊 Performance Metrics
 
-### Context Management
+> **Evidence**: See [`tests/benchmark-report-1760609422907.json`](tests/benchmark-report-1760609422907.json) for complete test results and data.
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Token usage @ 50 turns | 2,200 tokens | 1,400 tokens | 36% reduction |
-| Fact preservation | ~70% | ~95% | +25 points |
-| Max quality turns | 40-50 | 100+ | 2x capacity |
-| Summary creation time | N/A | 500ms async | Non-blocking |
-
-### Quality Scores
+### Quality Scores (LLM-as-a-Judge Evaluation)
 
 | Dimension | Score | Threshold |
 |-----------|-------|-----------|

@@ -85,8 +85,11 @@ logs/
 .coverage
 htmlcov/
 .tox/
+# Benchmark state (runtime only)
 .benchmark-state.json
-benchmark-report-*.json
+
+# Benchmark reports - keep for evidence, ignore old ones
+# benchmark-report-*.json
 
 # Jupyter
 .ipynb_checkpoints
