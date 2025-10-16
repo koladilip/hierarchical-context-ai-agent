@@ -1022,44 +1022,15 @@ const tokenBudget = {
 ```
 
 **Token Usage Evolution**:
-```mermaid
-gantt
-    title Token Usage Over 100 Turns (300K Context Window)
-    dateFormat X
-    axisFormat %s
-    
-    section Turn 0-20
-    System Prompt (2K)           :a1, 0, 2
-    Hot Context (4K)             :a2, 2, 6
-    Buffer (44K)                 :a3, 6, 50
-    Unused (250K)                :a4, 50, 300
-    
-    section Turn 21-40
-    System Prompt (2K)           :b1, 0, 2
-    Hot Context (8K)             :b2, 2, 10
-    Recent Summary (0.5K)        :b3, 10, 10.5
-    Buffer (39.5K)               :b4, 10.5, 50
-    Unused (250K)                :b5, 50, 300
-    
-    section Turn 41-60
-    System Prompt (2K)           :c1, 0, 2
-    Hot Context (10K)            :c2, 2, 12
-    Recent Summary (0.7K)        :c3, 12, 12.7
-    Middle Summary (0.5K)        :c4, 12.7, 13.2
-    Struct Memory (0.5K)         :c5, 13.2, 13.7
-    Buffer (36.3K)               :c6, 13.7, 50
-    Unused (250K)                :c7, 50, 300
-    
-    section Turn 80-100
-    System Prompt (2K)           :d1, 0, 2
-    Hot Context (12K)            :d2, 2, 14
-    Recent Summary (0.7K)        :d3, 14, 14.7
-    Middle Summary (0.5K)        :d4, 14.7, 15.2
-    Ancient Summary (0.3K)       :d5, 15.2, 15.5
-    Struct Memory (0.5K)         :d6, 15.5, 16
-    Buffer (34K)                 :d7, 16, 50
-    Unused (250K)                :d8, 50, 300
-```
+
+| Stage | System | Hot Context | Summaries | Memory | Buffer | Total Used | % of 300K |
+|-------|--------|-------------|-----------|--------|--------|------------|-----------|
+| **Turn 0-20** | 2K | 4K | - | - | 44K | 50K | 16.7% |
+| **Turn 21-40** | 2K | 8K | 0.5K (Recent) | - | 39.5K | 50K | 16.7% |
+| **Turn 41-60** | 2K | 10K | 1.2K (R+M) | 0.5K | 36.3K | 50K | 16.7% |
+| **Turn 80-100** | 2K | 12K | 1.5K (R+M+A) | 0.5K | 34K | 50K | 16.7% |
+
+**Key Insight**: Context usage stays constant at ~50K tokens across 100+ turns, while maintaining quality through progressive summarization.
 
 **Visual Token Distribution**:
 ```mermaid
