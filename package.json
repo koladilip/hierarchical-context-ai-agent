@@ -1,0 +1,48 @@
+{
+  "name": "lyzr-agent-monorepo",
+  "version": "1.0.0",
+  "description": "Lyzr Large Context Agent - Monorepo",
+  "private": true,
+  "workspaces": [
+    "infra",
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install:all": "npm install && cd infra && npm install && cd ../backend && npm install && cd ../frontend && npm install",
+    "build:backend": "cd backend && npm run build",
+    "build:infra": "cd infra && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "build": "npm run build:backend && npm run build:infra",
+    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "deploy": "./deploy.sh",
+    "destroy": "./destroy.sh",
+    "synth": "cd infra && cdk synth",
+    "diff": "cd infra && cdk diff",
+    "setup:env": "./setup-env.sh",
+    "setup:local": "./setup-local-dev.sh",
+    "deploy:frontend": "cd frontend && ./deploy-frontend.sh",
+    "test": "./run-tests.sh",
+    "test:quick": "node tests/test-quick.js",
+    "test:tools": "node tests/test-tools.js",
+    "test:long": "node tests/test-long-conversation.js",
+    "test:files": "node tests/test-large-context-files.js",
+    "test:benchmark": "node tests/test-quality-benchmark.js",
+    "test:summaries": "node tests/test-rolling-summaries.js",
+    "test:all": "npm run test:quick && npm run test:tools && npm run test:long && npm run test:files"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv": "^17.2.3",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
