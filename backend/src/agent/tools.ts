@@ -134,13 +134,13 @@ const textAnalyzerTool: Tool = {
  */
 const knowledgeSearchTool: Tool = {
   name: 'search_knowledge',
-  description: 'Searches the internal knowledge base for relevant information. Use when user asks about company policies, products, or documentation.',
+  description: 'Searches ONLY the organization-specific internal knowledge base. Use ONLY when user asks about THIS COMPANY\'S policies, products, or internal documentation. DO NOT use for general world knowledge, public information, or common topics - use your built-in knowledge instead.',
   parameters: {
     type: 'object',
     properties: {
       query: {
         type: 'string',
-        description: 'Search query to find relevant information',
+        description: 'Search query for company-internal information only',
       },
       limit: {
         type: 'number',
@@ -160,7 +160,7 @@ const knowledgeSearchTool: Tool = {
       );
       
       if (results.length === 0) {
-        return 'No relevant information found in the knowledge base.';
+        return '[Knowledge search returned no results - proceed with your general knowledge without mentioning the search]';
       }
       
       // Format results - can be large!
@@ -295,8 +295,15 @@ export function getTool(name: string): Tool | undefined {
 export function getToolsDescription(): string {
   return `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🔧 AVAILABLE TOOLS - Use these whenever appropriate!
+🔧 AVAILABLE TOOLS - Use these ONLY when explicitly needed!
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+IMPORTANT: You have extensive built-in knowledge. Use tools ONLY when:
+- Calculator: for math operations
+- Time: for current date/time
+- Analyze text: when explicitly asked to analyze
+- Remember: when user shares personal info to remember
+- Search knowledge: ONLY for company-specific internal docs (NOT for general world knowledge)
 
 ${AVAILABLE_TOOLS.map(tool => `📍 ${tool.name}
    ${tool.description}
@@ -322,6 +329,20 @@ PARAMS: {"preference": "follows vegetarian diet", "category": "dietary", "tags":
 Other tool examples:
 - User: "What is 15 × 37?" → TOOL_CALL: calculator, PARAMS: {"expression": "15 * 37"}
 - User: "What time is it?" → TOOL_CALL: get_current_time, PARAMS: {}
+
+🚨 CRITICAL: search_knowledge is ONLY for company-internal information!
+✅ DO USE: "What's our company's return policy?", "Show me our product documentation"
+❌ NEVER USE FOR: Cities, countries, people, history, science, general topics, public information
+
+Examples of queries to answer WITHOUT calling search_knowledge:
+- "Tell me about Vizag" → Answer directly with your knowledge
+- "Who is the president?" → Answer directly
+- "What is Python?" → Answer directly
+- "Tell me about Paris" → Answer directly
+
+Examples when TO call search_knowledge:
+- "What are our company values?" → TOOL_CALL: search_knowledge
+- "What's in our internal wiki about X?" → TOOL_CALL: search_knowledge
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 TOOL CALL FORMAT (Use EXACTLY this format):
@@ -401,6 +422,10 @@ function summarizeToolOutput(toolName: string, fullOutput: string): string {
   // Different summarization strategies based on tool type
   switch (toolName) {
     case 'search_knowledge':
+      // Check for empty results
+      if (fullOutput.includes('returned no results')) {
+        return fullOutput; // Pass through the instruction to LLM
+      }
       // Extract key findings and sources
       const results = fullOutput.match(/Result \d+ \(Relevance: \d+%\)/g) || [];
       const sources = fullOutput.match(/Source: [^\n]+/g) || [];
