@@ -1,0 +1,315 @@
+/* frontend/src/screens/FilesScreen.css */
+
+.files-screen {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.files-header {
+  margin-bottom: 30px;
+}
+
+.files-header h2 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  color: #333;
+}
+
+.subtitle {
+  color: #666;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Quota Card */
+.quota-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.quota-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.quota-value {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.quota-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.quota-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.quota-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* Upload Section */
+.upload-section {
+  margin-bottom: 24px;
+}
+
+.upload-btn-large {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-sizing: border-box;
+}
+
+.upload-btn-large:hover:not(:disabled) {
+  background: #5568d3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.upload-btn-large:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.delete-all-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-sizing: border-box;
+}
+
+.delete-all-btn:hover:not(:disabled) {
+  background: #dc2626;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.delete-all-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.upload-hint {
+  color: #666;
+  font-size: 13px;
+}
+
+/* Files List */
+.files-list {
+  display: grid;
+  gap: 16px;
+}
+
+.file-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+
+.file-card:hover {
+  border-color: #667eea;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.file-icon-large {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.file-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.file-name {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-meta {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  color: #666;
+}
+
+.file-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-btn:hover {
+  background: #667eea;
+  border-color: #667eea;
+  color: white;
+  transform: scale(1.1);
+}
+
+.action-btn.delete:hover {
+  background: #f44336;
+  border-color: #f44336;
+}
+
+/* Edit Name */
+.edit-name {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.edit-name input {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #667eea;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.edit-name button {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-name button:first-of-type {
+  background: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+}
+
+.empty-state p {
+  margin: 8px 0;
+}
+
+.empty-state .hint {
+  font-size: 14px;
+}
+
+/* Help Section */
+.help-section {
+  margin-top: 40px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+}
+
+.help-section h3 {
+  margin: 0 0 16px;
+  font-size: 18px;
+  color: #333;
+}
+
+.help-item {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.help-item strong {
+  color: #667eea;
+}
+
+.help-item code {
+  background: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 13px;
+  border: 1px solid #ddd;
+}
+
+.help-example {
+  margin: 12px 0;
+  padding: 12px;
+  background: #fff;
+  border-left: 3px solid #667eea;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #555;
+}
+
+.error-message {
+  padding: 12px;
+  background: #ffebee;
+  color: #c62828;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+}
+

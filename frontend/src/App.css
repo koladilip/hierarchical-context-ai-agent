@@ -1,0 +1,23 @@
+/* frontend/src/App.css */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f7fa;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Amplify Auth customization */
+[data-amplify-authenticator] {
+  --amplify-colors-brand-primary-80: #1976d2;
+  --amplify-colors-brand-primary-90: #1565c0;
+  --amplify-colors-brand-primary-100: #0d47a1;
+}
+
