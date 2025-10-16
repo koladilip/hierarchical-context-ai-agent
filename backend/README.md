@@ -436,7 +436,7 @@ async function executeTools(toolCalls) {
 2. **Time/Date**
    - Purpose: Current time queries
    - Input: `{ timezone: "America/New_York" }`
-   - Output: `{ time: "2024-10-16 14:30:00 EDT" }`
+   - Output: `{ time: "2025-10-16 14:30:00 EDT" }`
 
 3. **Text Analyzer**
    - Purpose: Text statistics
@@ -520,8 +520,8 @@ List user's sessions.
     {
       "sessionId": "uuid-1",
       "title": "Vacation Planning",
-      "createdAt": "2024-10-16T10:00:00Z",
-      "updatedAt": "2024-10-16T11:30:00Z",
+      "createdAt": "2025-10-16T10:00:00Z",
+      "updatedAt": "2025-10-16T11:30:00Z",
       "messageCount": 18,
       "totalTokens": 12456
     }

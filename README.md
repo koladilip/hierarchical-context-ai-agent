@@ -671,7 +671,7 @@ Every turn gets an index for precise retrieval:
 turnIdToContent.set(42, {
   role: 'user',
   content: 'What was the budget again?',
-  timestamp: '2024-10-16T10:30:00Z'
+  timestamp: '2025-10-16T10:30:00Z'
 });
 
 // Later retrieve
