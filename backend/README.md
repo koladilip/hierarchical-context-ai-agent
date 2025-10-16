@@ -278,7 +278,7 @@ getUserTotalFileSize(userId): Promise<number>
 2. Check user quota (100MB total)
 3. Extract text content based on file type
 4. Generate embedding of text content
-5. Store file in S3 (skyfi-lyzr-vectors bucket)
+5. Store file in S3 (lyzr-vectors bucket)
 6. Store metadata in DynamoDB
 7. Store embedding in S3 (JSON file)
 ```
@@ -301,7 +301,7 @@ deleteUserFile(fileId, userId): Promise<void>
 
 **Structure**:
 ```typescript
-// S3 bucket: skyfi-lyzr-vectors
+// S3 bucket: lyzr-vectors
 // Files:
 //   embeddings/{userId}/files/{fileId}.json
 //   embeddings/{userId}/memories/{memoryId}.json
@@ -638,7 +638,7 @@ Health check (no auth required).
 
 ```bash
 # AWS Resources (auto-set by CDK)
-S3_VECTOR_BUCKET=skyfi-lyzr-vectors
+S3_VECTOR_BUCKET=lyzr-vectors
 SESSIONS_TABLE=lyzr-sessions
 FILES_TABLE=lyzr-files
 COGNITO_USER_POOL_ID=us-east-1_xxxxx
@@ -723,7 +723,7 @@ console.log('Body:', req.body);
 **CloudWatch Logs** (production):
 ```bash
 aws logs tail /aws/lambda/lyzr-agent-api --follow \
-  --profile Skyfi-test-admin
+  --profile default
 ```
 
 ---

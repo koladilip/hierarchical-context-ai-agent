@@ -12,7 +12,7 @@ import { DynamoDBDocumentClient, PutCommand, GetCommand, QueryCommand, UpdateCom
 import { v4 as uuidv4 } from 'uuid';
 import { getVectorStore } from './vectorStore';
 
-const BUCKET_NAME = process.env.S3_VECTOR_BUCKET || 'skyfi-lyzr-vectors';
+const BUCKET_NAME = process.env.S3_VECTOR_BUCKET || 'lyzr-vectors';
 const FILES_TABLE = process.env.FILES_TABLE || 'lyzr-files';
 const MAX_USER_STORAGE_MB = 100; // 100MB per user
 

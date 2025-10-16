@@ -656,7 +656,7 @@ npm run build
 npm run deploy
 
 # Or manually:
-aws s3 sync build/ s3://skyfi-lyzr-app/ --delete
+aws s3 sync build/ s3://lyzr-app/ --delete
 aws cloudfront create-invalidation \
   --distribution-id XXXXX \
   --paths "/*"
@@ -672,9 +672,9 @@ npm run build
 
 # Upload to S3
 echo "Uploading to S3..."
-aws s3 sync build/ s3://skyfi-lyzr-app/ \
+aws s3 sync build/ s3://lyzr-app/ \
   --delete \
-  --profile Skyfi-test-admin
+  --profile default
 
 # Invalidate CloudFront cache
 echo "Invalidating CloudFront..."
@@ -682,12 +682,12 @@ DIST_ID=$(aws cloudformation describe-stacks \
   --stack-name LyzrAgentStack \
   --query 'Stacks[0].Outputs[?OutputKey==`CloudFrontDistributionId`].OutputValue' \
   --output text \
-  --profile Skyfi-test-admin)
+  --profile default)
 
 aws cloudfront create-invalidation \
   --distribution-id $DIST_ID \
   --paths "/*" \
-  --profile Skyfi-test-admin
+  --profile default
 
 echo "Deployment complete!"
 ```

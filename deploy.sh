@@ -20,7 +20,7 @@ if [ -f .env ]; then
 fi
 
 # Set AWS profile and region (from .env or default)
-export AWS_PROFILE=${AWS_PROFILE:-Skyfi-test-admin}
+export AWS_PROFILE=${AWS_PROFILE:-default}
 export AWS_REGION=${AWS_REGION:-us-east-1}
 
 echo "🚀 Lyzr Agent - Monorepo Deployment"

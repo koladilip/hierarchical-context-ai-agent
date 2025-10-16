@@ -105,7 +105,7 @@ new nodejs.NodejsFunction(this, 'ApiFunction', {
 **IAM Permissions**:
 - ✅ CloudWatch Logs (write)
 - ✅ DynamoDB (read/write on `lyzr-sessions` and `lyzr-files`)
-- ✅ S3 (read/write on `skyfi-lyzr-vectors`)
+- ✅ S3 (read/write on `lyzr-vectors`)
 - ✅ Bedrock (invoke model, invoke with stream)
 
 **Environment Variables**:
@@ -264,7 +264,7 @@ const authorizer = new HttpJwtAuthorizer(
 #### Vector Storage Bucket
 
 **Resource**: `VectorBucket`  
-**Bucket Name**: `skyfi-lyzr-vectors`  
+**Bucket Name**: `lyzr-vectors`  
 **Versioning**: Enabled  
 **Removal Policy**: DESTROY (deletes on stack deletion)
 
@@ -288,7 +288,7 @@ cors: [
 
 **Structure**:
 ```
-s3://skyfi-lyzr-vectors/
+s3://lyzr-vectors/
 ├── files/
 │   └── {userId}/
 │       └── {fileId}              # Original file
@@ -303,14 +303,14 @@ s3://skyfi-lyzr-vectors/
 #### Frontend Bucket
 
 **Resource**: `FrontendBucket`  
-**Bucket Name**: `skyfi-lyzr-app`  
+**Bucket Name**: `lyzr-app`  
 **Website Hosting**: Enabled  
 **Public Access**: Enabled (for CloudFront)
 
 **Configuration**:
 ```typescript
 {
-  bucketName: 'skyfi-lyzr-app',
+  bucketName: 'lyzr-app',
   websiteIndexDocument: 'index.html',
   websiteErrorDocument: 'index.html',
   publicReadAccess: true,
@@ -540,10 +540,10 @@ brew install awscli
 npm install -g aws-cdk
 
 # Configure AWS credentials
-aws configure --profile Skyfi-test-admin
+aws configure --profile default
 
 # Verify credentials
-aws sts get-caller-identity --profile Skyfi-test-admin
+aws sts get-caller-identity --profile default
 ```
 
 ### Initial Deployment
@@ -557,14 +557,14 @@ npm install
 
 # Bootstrap CDK (one-time per account/region)
 npx cdk bootstrap \
-  --profile Skyfi-test-admin \
+  --profile default \
   --region us-east-1
 
 # Preview changes
-npx cdk diff --profile Skyfi-test-admin
+npx cdk diff --profile default
 
 # Deploy stack
-npx cdk deploy --profile Skyfi-test-admin
+npx cdk deploy --profile default
 
 # Or use monorepo command
 cd ..
@@ -601,7 +601,7 @@ npm run deploy
 npm run destroy
 
 # Or
-npx cdk destroy --profile Skyfi-test-admin
+npx cdk destroy --profile default
 ```
 
 **⚠️ Warning**: This deletes all data (DynamoDB tables, S3 files, sessions).
@@ -673,14 +673,14 @@ environment: {
 **Lambda Logs**:
 ```bash
 aws logs tail /aws/lambda/lyzr-agent-api --follow \
-  --profile Skyfi-test-admin
+  --profile default
 ```
 
 **Filtered Logs** (errors only):
 ```bash
 aws logs tail /aws/lambda/lyzr-agent-api --follow \
   --filter-pattern "ERROR" \
-  --profile Skyfi-test-admin
+  --profile default
 ```
 
 ### DynamoDB Inspection
@@ -689,7 +689,7 @@ aws logs tail /aws/lambda/lyzr-agent-api --follow \
 ```bash
 aws dynamodb scan \
   --table-name lyzr-sessions \
-  --profile Skyfi-test-admin \
+  --profile default \
   | jq '.Items[0]'
 ```
 
@@ -698,26 +698,26 @@ aws dynamodb scan \
 aws dynamodb get-item \
   --table-name lyzr-sessions \
   --key '{"sessionId":{"S":"your-session-id"}}' \
-  --profile Skyfi-test-admin
+  --profile default
 ```
 
 ### S3 Inspection
 
 **List Buckets**:
 ```bash
-aws s3 ls --profile Skyfi-test-admin
+aws s3 ls --profile default
 ```
 
 **List Files**:
 ```bash
-aws s3 ls s3://skyfi-lyzr-vectors/ --recursive \
-  --profile Skyfi-test-admin
+aws s3 ls s3://lyzr-vectors/ --recursive \
+  --profile default
 ```
 
 **Download File**:
 ```bash
-aws s3 cp s3://skyfi-lyzr-vectors/files/user123/file456 . \
-  --profile Skyfi-test-admin
+aws s3 cp s3://lyzr-vectors/files/user123/file456 . \
+  --profile default
 ```
 
 ### API Gateway Testing
@@ -746,7 +746,7 @@ curl https://your-api-gateway-url.amazonaws.com/api/v1/sessions \
 **Solution**:
 ```bash
 npx cdk bootstrap \
-  --profile Skyfi-test-admin \
+  --profile default \
   --region us-east-1 \
   --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess
 ```
@@ -801,7 +801,7 @@ callbackUrls: [
 # Check what exists
 aws cloudformation describe-stacks \
   --stack-name LyzrAgentStack \
-  --profile Skyfi-test-admin
+  --profile default
 
 # Destroy and redeploy
 npm run destroy
@@ -887,5 +887,5 @@ Before going to production:
 
 **Infrastructure as Code**: AWS CDK + TypeScript  
 **Region**: us-east-1  
-**Account**: Skyfi-test-admin
+**Account**: 123456789012
 

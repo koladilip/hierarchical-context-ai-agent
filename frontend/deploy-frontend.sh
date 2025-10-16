@@ -21,7 +21,7 @@ echo "============================"
 echo ""
 
 # Configuration
-AWS_PROFILE=${AWS_PROFILE:-Skyfi-test-admin}
+AWS_PROFILE=${AWS_PROFILE:-default}
 AWS_REGION=${AWS_REGION:-us-east-1}
 
 # Get account ID and set resource prefix

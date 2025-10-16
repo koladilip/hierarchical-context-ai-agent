@@ -16,7 +16,7 @@ echo "📋 Getting CDK outputs..."
 cd infra
 
 # Export AWS profile for CDK
-export AWS_PROFILE=${AWS_PROFILE:-Skyfi-test-admin}
+export AWS_PROFILE=${AWS_PROFILE:-default}
 export CDK_DEFAULT_ACCOUNT=$(aws sts get-caller-identity --query Account --output text --profile ${AWS_PROFILE} 2>/dev/null)
 export CDK_DEFAULT_REGION=${AWS_REGION:-us-east-1}
 export RESOURCE_PREFIX=${RESOURCE_PREFIX:-$CDK_DEFAULT_ACCOUNT}
