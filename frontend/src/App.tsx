@@ -44,7 +44,7 @@ function App() {
                 margin: '0 0 0.5rem',
                 letterSpacing: '-0.02em',
               }}>
-                Lyzr Large Context Agent
+                Large Context AI Agent
               </h1>
               <p style={{ 
                 fontSize: '0.95rem', 
@@ -52,7 +52,7 @@ function App() {
                 opacity: 0.95,
                 fontWeight: '400',
               }}>
-                Multi-turn AI with Intelligent Context Management
+                Multi-turn agent with Intelligent Context Management
               </p>
             </div>
           );
