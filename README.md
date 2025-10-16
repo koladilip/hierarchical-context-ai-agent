@@ -410,9 +410,9 @@ graph LR
     end
     
     subgraph Search["Semantic Search Process"]
-        Search1[🔍 User Query:<br/>"budget requirements"]
+        Search1[🔍 User Query:<br/>budget requirements]
         Search2[🔢 Generate Query<br/>Embedding]
-        Search3[📊 Load User's<br/>Embeddings from S3]
+        Search3[📊 Load User Embeddings<br/>from S3]
         Search4[🎯 Cosine Similarity<br/>Calculation]
         Search5[📋 Top 5 Results<br/>with Scores]
         
