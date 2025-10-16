@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased] - 2024-10-16
+## [Unreleased] - 2025-10-16
 
 ### Added
 - Fixed AWS Bedrock validation error "First message must use the 'user' role"
