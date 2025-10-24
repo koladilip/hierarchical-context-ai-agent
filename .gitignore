@@ -1,4 +1,6 @@
-# Lyzr Agent .gitignore
+
+# Blog post (local only)
+blog-post.md
 
 # Python
 __pycache__/

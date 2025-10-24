@@ -29,15 +29,6 @@ function App() {
               color: 'white',
               borderRadius: '8px 8px 0 0',
             }}>
-              <img 
-                src="/assets/lyzr-logo.png" 
-                alt="Lyzr Logo" 
-                style={{ 
-                  height: '50px', 
-                  marginBottom: '1rem',
-                  filter: 'brightness(0) invert(1)', // Make logo white
-                }} 
-              />
               <h1 style={{ 
                 fontSize: '1.75rem', 
                 fontWeight: 'bold', 

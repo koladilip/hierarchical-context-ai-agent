@@ -27,7 +27,7 @@ export class S3VectorStore {
 
   constructor() {
     this.s3 = new S3Client({ region: process.env.AWS_REGION || 'us-east-1' });
-    this.bucketName = process.env.S3_VECTOR_BUCKET || 'lyzr-agent-vectors';
+    this.bucketName = process.env.S3_VECTOR_BUCKET || 'agent-vectors';
     this.embeddings = getEmbeddingsService();
     this.ensureBucket();
   }

@@ -63,7 +63,6 @@ export default function Header({ user, signOut }: HeaderProps) {
     <header className="header">
       <div className="header-content">
         <div className="logo">
-          <img src="/assets/lyzr-logo.png" alt="Lyzr" style={{ height: '28px', marginRight: '10px', verticalAlign: 'middle' }} />
           <span style={{ verticalAlign: 'middle', fontWeight: 'bold' }}>AI Agent</span>
         </div>
         

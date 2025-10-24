@@ -1,6 +1,6 @@
 // backend/src/handlers/index.ts
 /**
- * AWS Lambda handler for Lyzr Agent API
+ * AWS Lambda handler for Agent API
  * Entry point for all API requests
  */
 import { APIGatewayProxyEventV2, APIGatewayProxyResultV2, Context } from 'aws-lambda';

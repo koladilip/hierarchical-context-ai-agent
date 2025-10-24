@@ -27,7 +27,7 @@ AWS_REGION=${AWS_REGION:-us-east-1}
 # Get account ID and set resource prefix
 ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text --profile ${AWS_PROFILE} 2>/dev/null || echo "unknown")
 RESOURCE_PREFIX=${RESOURCE_PREFIX:-$ACCOUNT_ID}
-BUCKET_NAME="${RESOURCE_PREFIX}-lyzr-app"
+BUCKET_NAME="${RESOURCE_PREFIX}-agent-app"
 
 echo "📌 AWS Profile: ${AWS_PROFILE}"
 echo "📌 Resource Prefix: ${RESOURCE_PREFIX}"
@@ -69,7 +69,7 @@ echo ""
 # Get CloudFront distribution ID from CloudFormation
 echo "🌐 Getting CloudFront distribution..."
 DIST_ID=$(aws cloudformation describe-stacks \
-  --stack-name LyzrAgentStack \
+  --stack-name AgentStack \
   --query "Stacks[0].Outputs[?OutputKey=='CloudFrontDistributionId'].OutputValue" \
   --output text \
   --profile ${AWS_PROFILE} 2>/dev/null || echo "")

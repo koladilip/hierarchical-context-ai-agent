@@ -1,6 +1,6 @@
 # Backend API
 
-**Node.js 22 + TypeScript serverless API for the Lyzr Agent**
+**Node.js 22 + TypeScript serverless API for the Agent**
 
 This backend provides a REST API for managing AI agent conversations with intelligent context management, tool calling, and file processing.
 
@@ -202,7 +202,7 @@ BEDROCK_REGION=us-east-1
 
 **Tables**:
 
-**Sessions Table** (`lyzr-sessions`):
+**Sessions Table** (`agent-sessions`):
 ```typescript
 {
   sessionId: string;         // PK
@@ -227,7 +227,7 @@ BEDROCK_REGION=us-east-1
 }
 ```
 
-**Files Table** (`lyzr-files`):
+**Files Table** (`agent-files`):
 ```typescript
 {
   fileId: string;            // PK
@@ -278,7 +278,7 @@ getUserTotalFileSize(userId): Promise<number>
 2. Check user quota (100MB total)
 3. Extract text content based on file type
 4. Generate embedding of text content
-5. Store file in S3 (lyzr-vectors bucket)
+5. Store file in S3 (agent-vectors bucket)
 6. Store metadata in DynamoDB
 7. Store embedding in S3 (JSON file)
 ```
@@ -301,7 +301,7 @@ deleteUserFile(fileId, userId): Promise<void>
 
 **Structure**:
 ```typescript
-// S3 bucket: lyzr-vectors
+// S3 bucket: agent-vectors
 // Files:
 //   embeddings/{userId}/files/{fileId}.json
 //   embeddings/{userId}/memories/{memoryId}.json
@@ -638,9 +638,9 @@ Health check (no auth required).
 
 ```bash
 # AWS Resources (auto-set by CDK)
-S3_VECTOR_BUCKET=lyzr-vectors
-SESSIONS_TABLE=lyzr-sessions
-FILES_TABLE=lyzr-files
+S3_VECTOR_BUCKET=agent-vectors
+SESSIONS_TABLE=agent-sessions
+FILES_TABLE=agent-files
 COGNITO_USER_POOL_ID=us-east-1_xxxxx
 COGNITO_APP_CLIENT_ID=xxxxx
 
@@ -722,7 +722,7 @@ console.log('Body:', req.body);
 
 **CloudWatch Logs** (production):
 ```bash
-aws logs tail /aws/lambda/lyzr-agent-api --follow \
+aws logs tail /aws/lambda/agent-api --follow \
   --profile default
 ```
 
@@ -746,7 +746,7 @@ npm run cdk deploy
 
 **Bundle Configuration**:
 ```typescript
-// In infra/lib/lyzr-stack.ts
+// In infra/lib/agent-stack.ts
 bundling: {
   minify: true,           // Reduce bundle size
   sourceMap: true,        // Enable debugging

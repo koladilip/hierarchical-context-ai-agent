@@ -27,12 +27,12 @@ This project delivers a **hybrid context management system** that enables multi-
 
 ---
 
-## 🚀 Quick Start (For Judges)
+## 🚀 Quick Start
 
 ```bash
 # 1. Clone and setup
-git clone https://github.com/koladilip/lyzr-ai-agent.git
-cd lyzr-ai-agent
+git clone https://github.com/koladilip/ai-agent.git
+cd ai-agent
 ./setup-env.sh
 
 # 2. Deploy to AWS (requires AWS CLI configured)
@@ -364,7 +364,7 @@ graph TB
 ## 📁 Project Structure
 
 ```
-lyzr/
+agent/
 ├── backend/              # Lambda API (Node.js 22 + TypeScript)
 │   ├── src/
 │   │   ├── services/    # Core services (context, bedrock, database)
@@ -382,7 +382,7 @@ lyzr/
 │
 ├── infra/               # AWS CDK Infrastructure (TypeScript)
 │   ├── lib/
-│   │   └── lyzr-stack.ts # Complete AWS stack definition
+│   │   └── agent-stack.ts # Complete AWS stack definition
 │   └── README.md        # Infrastructure details
 │
 ├── test-*.js           # Integration tests
@@ -431,9 +431,9 @@ npm run destroy         # ✅ Uses my-company prefix
 ```
 
 **Resource names will be**:
-- S3 Buckets: `{PREFIX}-lyzr-vectors`, `{PREFIX}-lyzr-app`
-- DynamoDB Tables: `{PREFIX}-lyzr-sessions`, `{PREFIX}-lyzr-files`
-- Cognito Domain: `lyzr-agent-{ACCOUNT_ID}`
+- S3 Buckets: `{PREFIX}-agent-vectors`, `{PREFIX}-agent-app`
+- DynamoDB Tables: `{PREFIX}-agent-sessions`, `{PREFIX}-agent-files`
+- Cognito Domain: `agent-{ACCOUNT_ID}`
 
 > **Note**: Set `RESOURCE_PREFIX` once in `.env` - all deployment scripts automatically load and use it. No need to specify it every time!
 

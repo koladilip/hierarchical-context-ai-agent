@@ -1,6 +1,6 @@
 # Infrastructure
 
-**AWS CDK Infrastructure for the Lyzr Agent**
+**AWS CDK Infrastructure for the Agent**
 
 Complete AWS stack definition using Infrastructure as Code (IaC) with AWS CDK and TypeScript.
 
@@ -87,7 +87,7 @@ Complete AWS stack definition using Infrastructure as Code (IaC) with AWS CDK an
 **Configuration**:
 ```typescript
 new nodejs.NodejsFunction(this, 'ApiFunction', {
-  functionName: 'lyzr-agent-api',
+  functionName: 'agent-agent-api',
   runtime: lambda.Runtime.NODEJS_22_X,
   entry: '../backend/src/handlers/index.ts',
   handler: 'handler',
@@ -104,8 +104,8 @@ new nodejs.NodejsFunction(this, 'ApiFunction', {
 
 **IAM Permissions**:
 - ✅ CloudWatch Logs (write)
-- ✅ DynamoDB (read/write on `lyzr-sessions` and `lyzr-files`)
-- ✅ S3 (read/write on `lyzr-vectors`)
+- ✅ DynamoDB (read/write on `agent-sessions` and `agent-files`)
+- ✅ S3 (read/write on `agent-vectors`)
 - ✅ Bedrock (invoke model, invoke with stream)
 
 **Environment Variables**:
@@ -188,14 +188,14 @@ const authorizer = new HttpJwtAuthorizer(
 #### Sessions Table
 
 **Resource**: `SessionsTable`  
-**Table Name**: `lyzr-sessions`  
+**Table Name**: `agent-sessions`  
 **Billing**: On-demand (auto-scales)  
 **TTL**: Enabled (attribute: `ttl`)
 
 **Schema**:
 ```typescript
 {
-  tableName: 'lyzr-sessions',
+  tableName: 'agent-sessions',
   partitionKey: {
     name: 'sessionId',
     type: AttributeType.STRING
@@ -226,13 +226,13 @@ const authorizer = new HttpJwtAuthorizer(
 #### Files Table
 
 **Resource**: `FilesTable`  
-**Table Name**: `lyzr-files`  
+**Table Name**: `agent-files`  
 **Billing**: On-demand
 
 **Schema**:
 ```typescript
 {
-  tableName: 'lyzr-files',
+  tableName: 'agent-files',
   partitionKey: {
     name: 'fileId',
     type: AttributeType.STRING
@@ -264,7 +264,7 @@ const authorizer = new HttpJwtAuthorizer(
 #### Vector Storage Bucket
 
 **Resource**: `VectorBucket`  
-**Bucket Name**: `lyzr-vectors`  
+**Bucket Name**: `agent-vectors`  
 **Versioning**: Enabled  
 **Removal Policy**: DESTROY (deletes on stack deletion)
 
@@ -288,7 +288,7 @@ cors: [
 
 **Structure**:
 ```
-s3://lyzr-vectors/
+s3://agent-vectors/
 ├── files/
 │   └── {userId}/
 │       └── {fileId}              # Original file
@@ -303,14 +303,14 @@ s3://lyzr-vectors/
 #### Frontend Bucket
 
 **Resource**: `FrontendBucket`  
-**Bucket Name**: `lyzr-app`  
+**Bucket Name**: `agent-app`  
 **Website Hosting**: Enabled  
 **Public Access**: Enabled (for CloudFront)
 
 **Configuration**:
 ```typescript
 {
-  bucketName: 'lyzr-app',
+  bucketName: 'agent-app',
   websiteIndexDocument: 'index.html',
   websiteErrorDocument: 'index.html',
   publicReadAccess: true,
@@ -363,12 +363,12 @@ s3://lyzr-vectors/
 ### 6. Cognito User Pool
 
 **Resource**: `UserPool`  
-**Name**: `lyzr-agent-users`
+**Name**: `agent-agent-users`
 
 **Configuration**:
 ```typescript
 {
-  userPoolName: 'lyzr-agent-users',
+  userPoolName: 'agent-agent-users',
   selfSignUpEnabled: true,
   signInAliases: {
     email: true
@@ -396,20 +396,20 @@ s3://lyzr-vectors/
 ```typescript
 userPool.addDomain('CognitoDomain', {
   cognitoDomain: {
-    domainPrefix: `lyzr-agent-${accountId}`
+    domainPrefix: `agent-agent-${accountId}`
   }
 });
 ```
 
 **Hosted UI URL**:
 ```
-https://lyzr-agent-{accountId}.auth.us-east-1.amazoncognito.com
+https://agent-agent-{accountId}.auth.us-east-1.amazoncognito.com
 ```
 
 #### User Pool Client
 
 **Resource**: `UserPoolClient`  
-**Name**: `lyzr-agent-client`
+**Name**: `agent-agent-client`
 
 **OAuth Configuration**:
 ```typescript
@@ -464,7 +464,7 @@ new UserPoolIdentityProviderGoogle(this, 'GoogleProvider', {
 1. Go to [Google Cloud Console](https://console.cloud.google.com/)
 2. Create OAuth 2.0 credentials
 3. Add authorized redirect URIs:
-   - `https://lyzr-agent-{accountId}.auth.us-east-1.amazoncognito.com/oauth2/idpresponse`
+   - `https://agent-agent-{accountId}.auth.us-east-1.amazoncognito.com/oauth2/idpresponse`
 4. Export credentials:
    ```bash
    export GOOGLE_CLIENT_ID="your-client-id"
@@ -573,19 +573,19 @@ npm run deploy
 
 **Expected Output**:
 ```
-✅  LyzrAgentStack
+✅  AgentStack
 
 Outputs:
-LyzrAgentStack.ApiEndpoint = https://xxxxx.execute-api.us-east-1.amazonaws.com
-LyzrAgentStack.UserPoolId = us-east-1_xxxxx
-LyzrAgentStack.UserPoolClientId = xxxxx
-LyzrAgentStack.CloudFrontUrl = https://xxxxx.cloudfront.net
+AgentStack.ApiEndpoint = https://xxxxx.execute-api.us-east-1.amazonaws.com
+AgentStack.UserPoolId = us-east-1_xxxxx
+AgentStack.UserPoolClientId = xxxxx
+AgentStack.CloudFrontUrl = https://xxxxx.cloudfront.net
 ```
 
 ### Update Deployment
 
 ```bash
-# Make changes to lib/lyzr-stack.ts
+# Make changes to lib/agent-stack.ts
 
 # Preview changes
 npm run diff
@@ -617,7 +617,7 @@ npx cdk destroy --profile default
 ```typescript
 const app = new cdk.App();
 
-new LyzrAgentStack(app, 'LyzrAgentStack', {
+new AgentStack(app, 'AgentStack', {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT,
     region: 'us-east-1'
@@ -649,7 +649,7 @@ CDK_DEFAULT_REGION=us-east-1
 
 ### Model Configuration
 
-Change Bedrock models in `lib/lyzr-stack.ts`:
+Change Bedrock models in `lib/agent-stack.ts`:
 
 ```typescript
 environment: {
@@ -672,13 +672,13 @@ environment: {
 
 **Lambda Logs**:
 ```bash
-aws logs tail /aws/lambda/lyzr-agent-api --follow \
+aws logs tail /aws/lambda/agent-agent-api --follow \
   --profile default
 ```
 
 **Filtered Logs** (errors only):
 ```bash
-aws logs tail /aws/lambda/lyzr-agent-api --follow \
+aws logs tail /aws/lambda/agent-agent-api --follow \
   --filter-pattern "ERROR" \
   --profile default
 ```
@@ -688,7 +688,7 @@ aws logs tail /aws/lambda/lyzr-agent-api --follow \
 **List Sessions**:
 ```bash
 aws dynamodb scan \
-  --table-name lyzr-sessions \
+  --table-name agent-sessions \
   --profile default \
   | jq '.Items[0]'
 ```
@@ -696,7 +696,7 @@ aws dynamodb scan \
 **Get Specific Session**:
 ```bash
 aws dynamodb get-item \
-  --table-name lyzr-sessions \
+  --table-name agent-sessions \
   --key '{"sessionId":{"S":"your-session-id"}}' \
   --profile default
 ```
@@ -710,13 +710,13 @@ aws s3 ls --profile default
 
 **List Files**:
 ```bash
-aws s3 ls s3://lyzr-vectors/ --recursive \
+aws s3 ls s3://agent-vectors/ --recursive \
   --profile default
 ```
 
 **Download File**:
 ```bash
-aws s3 cp s3://lyzr-vectors/files/user123/file456 . \
+aws s3 cp s3://agent-vectors/files/user123/file456 . \
   --profile default
 ```
 
@@ -800,7 +800,7 @@ callbackUrls: [
 ```bash
 # Check what exists
 aws cloudformation describe-stacks \
-  --stack-name LyzrAgentStack \
+  --stack-name AgentStack \
   --profile default
 
 # Destroy and redeploy

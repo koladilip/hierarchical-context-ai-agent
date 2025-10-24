@@ -1,7 +1,7 @@
 {
-  "name": "@lyzr/backend",
+  "name": "@agent/backend",
   "version": "1.0.0",
-  "description": "Lyzr Agent Backend - Lambda API",
+  "description": "Agent Backend - Lambda API",
   "main": "src/handlers/index.ts",
   "scripts": {
     "build": "tsc",

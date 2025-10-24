@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 // cdk/bin/app.ts
 /**
- * AWS CDK App for Lyzr Large Context Agent
+ * AWS CDK App for Large Context Agent
  * Deploy entire infrastructure with: cdk deploy
  */
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { LyzrAgentStack } from '../lib/lyzr-stack';
+import { AgentStack } from '../lib/agent-stack';
 
 const app = new cdk.App();
 
@@ -36,7 +36,7 @@ if (config.googleClientId && config.googleClientSecret) {
 }
 
 // Create stack
-new LyzrAgentStack(app, 'LyzrAgentStack', {
+new AgentStack(app, 'AgentStack', {
   config,
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT,

@@ -26,7 +26,7 @@ expressApp.use(express.json());
 expressApp.get('/', (req: Request, res: Response) => {
   const mode = process.env.NODE_ENV || 'production';
   res.json({
-    message: 'Lyzr Large Context Agent API',
+    message: 'Large Context Agent API',
     docs: '/api/v1/health',
     version: '1.0.0',
     mode,

@@ -55,7 +55,7 @@ process.on('unhandledRejection', (reason, promise) => {
 expressApp.listen(PORT, () => {
   console.log('');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-  console.log(`🚀 Lyzr Agent Backend - Development Server`);
+  console.log(`🚀 Agent Backend - Development Server`);
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
   console.log(`📡 API Server: http://localhost:${PORT}`);
   console.log(`🔗 Health Check: http://localhost:${PORT}/api/v1/health`);

@@ -1,6 +1,6 @@
 # Test Suite Documentation
 
-Comprehensive testing suite for the Lyzr Agent platform. All tests require a valid `COGNITO_TOKEN` environment variable.
+Comprehensive testing suite for the Agent platform. All tests require a valid `COGNITO_TOKEN` environment variable.
 
 ## Quick Start
 

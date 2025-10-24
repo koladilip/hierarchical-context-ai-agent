@@ -1,7 +1,7 @@
 {
-  "name": "lyzr-agent-monorepo",
+  "name": "agent-monorepo",
   "version": "1.0.0",
-  "description": "Lyzr Large Context Agent - Monorepo",
+  "description": "Large Context Agent - Monorepo",
   "private": true,
   "workspaces": [
     "infra",

@@ -12,8 +12,8 @@ import { DynamoDBDocumentClient, PutCommand, GetCommand, QueryCommand, UpdateCom
 import { v4 as uuidv4 } from 'uuid';
 import { getVectorStore } from './vectorStore';
 
-const BUCKET_NAME = process.env.S3_VECTOR_BUCKET || 'lyzr-vectors';
-const FILES_TABLE = process.env.FILES_TABLE || 'lyzr-files';
+const BUCKET_NAME = process.env.S3_VECTOR_BUCKET || 'agent-vectors';
+const FILES_TABLE = process.env.FILES_TABLE || 'agent-files';
 const MAX_USER_STORAGE_MB = 100; // 100MB per user
 
 const s3Client = new S3Client({ region: process.env.AWS_REGION || 'us-east-1' });

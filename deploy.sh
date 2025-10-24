@@ -23,7 +23,7 @@ fi
 export AWS_PROFILE=${AWS_PROFILE:-default}
 export AWS_REGION=${AWS_REGION:-us-east-1}
 
-echo "🚀 Lyzr Agent - Monorepo Deployment"
+echo "🚀 Agent - Monorepo Deployment"
 echo "===================================="
 echo ""
 echo "📌 AWS Profile: ${AWS_PROFILE}"

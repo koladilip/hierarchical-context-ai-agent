@@ -12,7 +12,7 @@ export const awsConfig = {
       loginWith: {
         email: true,
         oauth: {
-          domain: import.meta.env.VITE_COGNITO_DOMAIN || 'lyzr-agent-237139758061.auth.us-east-1.amazoncognito.com',
+          domain: import.meta.env.VITE_COGNITO_DOMAIN || 'agent-237139758061.auth.us-east-1.amazoncognito.com',
           scopes: [
             'email',
             'profile',

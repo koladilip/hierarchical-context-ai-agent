@@ -25,7 +25,7 @@ export CDK_DEFAULT_ACCOUNT=$ACCOUNT_ID
 export CDK_DEFAULT_REGION=$AWS_REGION
 export RESOURCE_PREFIX=${RESOURCE_PREFIX:-$ACCOUNT_ID}
 
-echo "🗑️  Lyzr Agent - Destroy Infrastructure"
+echo "🗑️  Agent - Destroy Infrastructure"
 echo "======================================"
 echo ""
 echo "📌 AWS Profile: ${AWS_PROFILE}"

@@ -1,7 +1,7 @@
 {
-  "name": "lyzr-agent-cdk",
+  "name": "agent-cdk",
   "version": "1.0.0",
-  "description": "AWS CDK infrastructure for Lyzr Agent",
+  "description": "AWS CDK infrastructure for Agent",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",

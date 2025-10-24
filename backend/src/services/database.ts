@@ -15,7 +15,7 @@ import {
 } from '@aws-sdk/client-dynamodb';
 import { marshall, unmarshall } from '@aws-sdk/util-dynamodb';
 
-const SESSIONS_TABLE = process.env.SESSIONS_TABLE || 'lyzr-sessions';
+const SESSIONS_TABLE = process.env.SESSIONS_TABLE || 'agent-sessions';
 
 export interface Message {
   role: 'user' | 'assistant' | 'system';

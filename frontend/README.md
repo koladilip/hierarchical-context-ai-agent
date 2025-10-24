@@ -1,6 +1,6 @@
 # Frontend Application
 
-**React 19 + TypeScript single-page application for the Lyzr Agent**
+**React 19 + TypeScript single-page application for the Agent**
 
 Modern, responsive UI for managing AI conversations with real-time context tracking, file management, and memory visualization.
 
@@ -46,7 +46,6 @@ frontend/
 │
 ├── public/
 │   ├── assets/
-│   │   └── lyzr-logo.png
 │   └── vite.svg
 │
 ├── build/                       # Production build output
@@ -275,7 +274,7 @@ const deleteMemory = async (memoryId: string) => {
 **UI Layout**:
 ```
 ┌─────────────────────────────────────────────────────────┐
-│ 🤖 Lyzr Agent    [Chat] [Files] [Memories]             │
+│ 🤖 Agent    [Chat] [Files] [Memories]             │
 │                                                          │
 │                          user@email.com  [🔑 Token] [⏏]│
 └─────────────────────────────────────────────────────────┘
@@ -593,7 +592,7 @@ npm run dev
 VITE_API_ENDPOINT=http://localhost:3001
 VITE_COGNITO_USER_POOL_ID=us-east-1_xxxxx
 VITE_COGNITO_CLIENT_ID=xxxxx
-VITE_COGNITO_DOMAIN=lyzr-agent-xxxxx.auth.us-east-1.amazoncognito.com
+VITE_COGNITO_DOMAIN=agent-xxxxx.auth.us-east-1.amazoncognito.com
 ```
 
 ### Hot Module Replacement
@@ -656,7 +655,7 @@ npm run build
 npm run deploy
 
 # Or manually:
-aws s3 sync build/ s3://lyzr-app/ --delete
+aws s3 sync build/ s3://agent-app/ --delete
 aws cloudfront create-invalidation \
   --distribution-id XXXXX \
   --paths "/*"
@@ -672,14 +671,14 @@ npm run build
 
 # Upload to S3
 echo "Uploading to S3..."
-aws s3 sync build/ s3://lyzr-app/ \
+aws s3 sync build/ s3://agent-app/ \
   --delete \
   --profile default
 
 # Invalidate CloudFront cache
 echo "Invalidating CloudFront..."
 DIST_ID=$(aws cloudformation describe-stacks \
-  --stack-name LyzrAgentStack \
+  --stack-name AgentStack \
   --query 'Stacks[0].Outputs[?OutputKey==`CloudFrontDistributionId`].OutputValue' \
   --output text \
   --profile default)

@@ -22,7 +22,7 @@ export CDK_DEFAULT_REGION=${AWS_REGION:-us-east-1}
 export RESOURCE_PREFIX=${RESOURCE_PREFIX:-$CDK_DEFAULT_ACCOUNT}
 
 # Get stack outputs from CloudFormation directly (more reliable)
-STACK_NAME="LyzrAgentStack"
+STACK_NAME="AgentStack"
 API_ENDPOINT=$(aws cloudformation describe-stacks \
   --stack-name ${STACK_NAME} \
   --query 'Stacks[0].Outputs[?OutputKey==`ApiEndpoint`].OutputValue' \
@@ -75,7 +75,7 @@ echo ""
 
 # Get account ID for Cognito domain
 ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text --profile ${AWS_PROFILE} 2>/dev/null)
-COGNITO_DOMAIN="lyzr-agent-${ACCOUNT_ID}.auth.us-east-1.amazoncognito.com"
+COGNITO_DOMAIN="agent-${ACCOUNT_ID}.auth.us-east-1.amazoncognito.com"
 
 # Use resource prefix from environment or default to account ID
 RESOURCE_PREFIX=${RESOURCE_PREFIX:-$ACCOUNT_ID}
@@ -90,7 +90,7 @@ fi
 
 # Create root .env
 cat > .env <<EOF
-# Lyzr Agent - Auto-generated from CDK outputs
+# Agent - Auto-generated from CDK outputs
 # Generated: $(date)
 
 # AWS Configuration
